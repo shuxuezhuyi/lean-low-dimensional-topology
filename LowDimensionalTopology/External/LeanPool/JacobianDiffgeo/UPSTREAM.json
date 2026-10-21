@@ -1,0 +1,59 @@
+{
+  "upstream": "https://github.com/LeanPool/lean-pool",
+  "commit": "86da5902e640ceb44e53f88c4a04f870dc062126",
+  "license": "Apache-2.0",
+  "authors": [
+    "Rado Kirov"
+  ],
+  "scope": "Three-module path-perturbation proof core. The sphere proof reuses the existing original-project atlas, so the five other upstream sphere/manifold modules are not copied. No package, toolchain or dependency pin changes.",
+  "local_license": "LowDimensionalTopology/External/LeanPool/LICENSE",
+  "files": [
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.JacobianDiffgeo.Path.Chain",
+      "file": "LowDimensionalTopology/External/LeanPool/JacobianDiffgeo/Path/Chain.lean",
+      "upstream_file": "LeanPool/JacobianDiffgeo/Path/Chain.lean",
+      "upstream_sha256": "751e28198bcbc0b67408eddc2b77701f3ee34ffae7aa998eb84af70fe6bc93fa",
+      "local_sha256": "662f177413b8c94be9b37f5741a27712dcf0572323e3c3b6aa78389dd7c9bffc",
+      "changes": [
+        "Project-relative module paths and explicit public imports",
+        "Original statement/proof retained"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.JacobianDiffgeo.Path.Planar",
+      "file": "LowDimensionalTopology/External/LeanPool/JacobianDiffgeo/Path/Planar.lean",
+      "upstream_file": "LeanPool/JacobianDiffgeo/Path/Planar.lean",
+      "upstream_sha256": "ad61bb2b9561f29290cb5fa450ba9ec2c1b63e0e9b3ce51666e13cf24a0343b5",
+      "local_sha256": "e26e1e36d7180e0178c3ef5b7621e94bf7d71e12ee57ba47ff370070517244ec",
+      "changes": [
+        "Project-relative module paths and explicit public imports",
+        "Original statement/proof retained"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.JacobianDiffgeo.Path.Perturb",
+      "file": "LowDimensionalTopology/External/LeanPool/JacobianDiffgeo/Path/Perturb.lean",
+      "upstream_file": "LeanPool/JacobianDiffgeo/Path/Perturb.lean",
+      "upstream_sha256": "9e20daf4a505bdbcd0904b5df112821b601d091a507ea40bd9243f19dad5ebef",
+      "local_sha256": "50de6f5df9ca12d5aae7a070000608cb6a1c54b69eb7f0ff693790ca1168348a",
+      "changes": [
+        "Project-relative module paths and explicit public imports",
+        "Original statement/proof retained"
+      ]
+    }
+  ],
+  "adapted_project_modules": [
+    {
+      "file": "LowDimensionalTopology/Geometry/Surfaces/Riemann/RiemannSphereTopology.lean",
+      "upstream_file": "LeanPool/JacobianDiffgeo/SphereTopology/SimplyConnectedP1.lean",
+      "upstream_sha256": "70429619ccdd711da813f529496b3ae242adcc50c1f41328b47b1e45cea7cb35",
+      "local_sha256": "7640413fe071da9d9af0d6e88f5d5f7753bd3e3f930e7340348d1910f42df940",
+      "changes": [
+        "Retain copyright/authorship and the polar-cap plus path-perturbation proof",
+        "Use existing sphereRiemannAtlas and sphereReciprocalHomeomorph; no second atlas instance",
+        "Add compact-simply-connected and genuine topological-two-sphere conformal consequences from proved uniformization",
+        "Reorganize the local adapter by mathematical object and update resolved project imports; retain the upstream proof, copyright and license"
+      ]
+    }
+  ]
+}

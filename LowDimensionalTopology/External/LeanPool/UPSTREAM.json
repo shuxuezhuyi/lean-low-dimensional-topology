@@ -1,0 +1,159 @@
+{
+  "upstream": "https://github.com/LeanPool/lean-pool",
+  "commit": "86da5902e640ceb44e53f88c4a04f870dc062126",
+  "license": "Apache-2.0",
+  "authors": [
+    "Rado Kirov"
+  ],
+  "original_author_project": "https://github.com/rkirov/jordan_pick",
+  "scope": "The complete thirteen-module import closure of rado_riemannSurface. No external Lake package or toolchain/dependency pin is introduced.",
+  "files": [
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Surface.Charts",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Surface/Charts.lean",
+      "upstream_file": "LeanPool/Rado/Surface/Charts.lean",
+      "upstream_sha256": "02c0ca89127f33b5f7bde4ef1608c64da5f8e2b74244ac7912c482266f0d30c8",
+      "local_sha256": "5d734f45cb32cdcee92855d5c3680fe2327e36732cb422684dc9ea650c0c81e8",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Complex.SubMean",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Complex/SubMean.lean",
+      "upstream_file": "LeanPool/Rado/Complex/SubMean.lean",
+      "upstream_sha256": "5e3f25a669e357df747d50647be4696ee0df7006ab0e1f54ab3c72132263cbd7",
+      "local_sha256": "cb4e0a0ae33507c4678908b8925e356a526f371702bef43b95dca4c4c640ee32",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Complex.Poisson",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Complex/Poisson.lean",
+      "upstream_file": "LeanPool/Rado/Complex/Poisson.lean",
+      "upstream_sha256": "829c4b905068fb72a920c42cf5a00d02e291766702278998b4d9407ccd5d49a3",
+      "local_sha256": "5f6e5cc4bf79d884355d0b4885c083db53f6a01c150ba40f6baab0ac7a4422e1",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Complex.Dirichlet",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Complex/Dirichlet.lean",
+      "upstream_file": "LeanPool/Rado/Complex/Dirichlet.lean",
+      "upstream_sha256": "32f5de0f0f645c45744d494171f218068265074ce8a1879904f8b1f9e74e2ff5",
+      "local_sha256": "a987b1e3b2567d9d9eb26295f80c0ff4372064acb7b1d012bf7c110e9889f014",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Surface.Harmonic",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Surface/Harmonic.lean",
+      "upstream_file": "LeanPool/Rado/Surface/Harmonic.lean",
+      "upstream_sha256": "c3d3f3998be5151604be3eb7ea2ee9bfc2984734b618ddea4d15cef109d9e1ce",
+      "local_sha256": "af241453f261653df7b8fb6e6cfe49a8794709c403d7fe33186100b675e5a256",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Surface.Perron",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Surface/Perron.lean",
+      "upstream_file": "LeanPool/Rado/Surface/Perron.lean",
+      "upstream_sha256": "0e686bc652deb8cebe84d9cbb945d5994bf8c05537f9ec003e78ad74b868e666",
+      "local_sha256": "37131042e99f1797925a4a4f545577bb6be6335900a938e3bd7df7eb52af4c4c",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Complex.PlanarConnected",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Complex/PlanarConnected.lean",
+      "upstream_file": "LeanPool/Rado/Complex/PlanarConnected.lean",
+      "upstream_sha256": "2eb862e7b8672724f4f4e2addb4c308366645cb986d35963efeb58ab3c9aa980",
+      "local_sha256": "de5b8c2307c45ceb358025faa2a30a24d473abcb9e90d8014e2f7bcb17a30f02",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public",
+        "Explicit Mathlib.Analysis.Normed.Module.Convex import for convex_ball"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Surface.Barriers",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Surface/Barriers.lean",
+      "upstream_file": "LeanPool/Rado/Surface/Barriers.lean",
+      "upstream_sha256": "4d16ba222a24d4da67c37ba33674ee93f096fb148f228841eb60ccd3e8b76bc0",
+      "local_sha256": "1c5b334362ac3542ead4d9dd4a4b650580f712846a119cd47b732193f9173922",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Surface.Germs",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Surface/Germs.lean",
+      "upstream_file": "LeanPool/Rado/Surface/Germs.lean",
+      "upstream_sha256": "0608290b92986f33c46fbc0cf78165c259df69b747f4198ffe0caaa4590e163d",
+      "local_sha256": "d1aab2cf0d133e0126b1f070310c8dae4005c42e85e87c7b141ce0751c6dc260",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Topology.SecondCountable",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Topology/SecondCountable.lean",
+      "upstream_file": "LeanPool/Rado/Topology/SecondCountable.lean",
+      "upstream_sha256": "429e891bc2991214e8fa4bc4cbc8d859bfcf7a27fee13f1ea61c042aad16b020",
+      "local_sha256": "607576ac260a9941c387726395e3701bb027c2fedd6b7f97953ca602aa03d9b9",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Topology.PoincareVolterra",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Topology/PoincareVolterra.lean",
+      "upstream_file": "LeanPool/Rado/Topology/PoincareVolterra.lean",
+      "upstream_sha256": "a9b8d03b3b346a58136ae2162245cccf11b1cd1fa76641d63194b9191b0416b4",
+      "local_sha256": "7f52f19b037c6a75fb474d31e7e0124b96553cbbddd942d071085c77b3c835c2",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Surface.Assembly",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Surface/Assembly.lean",
+      "upstream_file": "LeanPool/Rado/Surface/Assembly.lean",
+      "upstream_sha256": "6f904d79a99715a89cf2500b57236035c3ac01c24b099d87d33ba1306ec32eda",
+      "local_sha256": "5e201dcbf089b5423ba25ac60febf4830abe2cd96bcf82b2fb6ac110bedf8b4d",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.Rado.Main",
+      "file": "LowDimensionalTopology/External/LeanPool/Rado/Main.lean",
+      "upstream_file": "LeanPool/Rado/Main.lean",
+      "upstream_sha256": "6402a12d160bbdc4a7e5463460ecfb4b5b7aec6f677aaf48295a37894c27d9c5",
+      "local_sha256": "99dadf3abdccc5826db4a5d7d50b69e8262615d57966352152ab7ff389ba6c4b",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ]
+    }
+  ],
+  "license_file_changes": [
+    "Removed one trailing blank line for the project whitespace gate; license text and copyright notices are retained."
+  ]
+}

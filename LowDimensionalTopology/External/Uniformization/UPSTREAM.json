@@ -1,0 +1,442 @@
+{
+  "upstream": "https://github.com/LR-UK/Bounded-orbit-wandering-domains",
+  "commit": "6e306deb8169e834e9cc6662160c70231a7e2a83",
+  "license": "Apache-2.0",
+  "authors": [
+    "Will (Ziang) Li",
+    "Geoffrey Irving (sphere-atlas source)",
+    "Yury Kudryashov (Riemann mapping and unit-disc shifts)"
+  ],
+  "scope": "The complete reduced33-module dependency of general uniformization, with the exact original-surface adapters maintained separately in Geometry.Surfaces.Uniformization.Uniformization. No Lake package, dependency pin, or toolchain change.",
+  "planned_module_count": 33,
+  "included_module_count": 33,
+  "secondary_sources": [
+    {
+      "author": "Geoffrey Irving",
+      "repository": "https://github.com/girving/ray",
+      "commit": "753f7131cf96f4651294de4398368abf136c34de",
+      "file": "Ray/Manifold/RiemannSphere.lean",
+      "license": "Apache-2.0",
+      "via": "FunctionTheory.RiemannSphere.Basic"
+    },
+    {
+      "author": "Yury Kudryashov",
+      "repository": "https://github.com/urkud/mathlib4",
+      "commit": "d43061d911b1aeae0788591da437a3b115098962",
+      "files": [
+        "Mathlib/Analysis/Complex/RiemannMapping.lean",
+        "Mathlib/Analysis/Complex/UnitDisc/Shift.lean"
+      ],
+      "license": "Apache-2.0",
+      "via": [
+        "BoundedWanderingDomains.RiemannMappingFull",
+        "BoundedWanderingDomains.UnitDiscShift"
+      ],
+      "pull_request": "https://github.com/leanprover-community/mathlib4/pull/33505"
+    }
+  ],
+  "files": [
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Sphere.Basic",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Sphere/Basic.lean",
+      "upstream_file": "RiemannDynamics/Sphere/Basic.lean",
+      "upstream_sha256": "26b0b82b159b088aa809cc046101f714d091ad410b52ad01831dc4aab6f63002",
+      "local_sha256": "1a674bb3685efebb1666940e2c85a4832f47a6bd06f1d08428be53247540d3b2",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Sphere.MobiusAction",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Sphere/MobiusAction.lean",
+      "upstream_file": "RiemannDynamics/Sphere/MobiusAction.lean",
+      "upstream_sha256": "24479e5f64223a7c30d5d1046f0cee1fd2a412ce1ef1dc0bd2946d17bfb48fd5",
+      "local_sha256": "9f458415782a67d7301735381094a396ee337b9b03337075c567d78213d0e886",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.FunctionTheory.RiemannSphere.Basic",
+      "file": "LowDimensionalTopology/External/Uniformization/FunctionTheory/RiemannSphere/Basic.lean",
+      "upstream_file": "dependencies/FunctionTheory/FunctionTheory/RiemannSphere/Basic.lean",
+      "upstream_sha256": "198b4ff1615f1bb314c4e1899207c0e8a9f74ebe059a8229a0b3b02b53db1504",
+      "local_sha256": "1666c997fc496008f67889f3595511bd5da5f8d83b44ef09e93ceb8a6b83338e",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.SphereManifold",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/SphereManifold.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/SphereManifold.lean",
+      "upstream_sha256": "bef8978cbb7dbf305531cbba4cec84be59a209b123e2c299584fb9f3e615eff8",
+      "local_sha256": "bd3355064639c59cc3f94f723ad9878fd9ee723f064f2fca67f27a41952174ad",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Open ContDiff notation explicitly; omit unused normal-family import",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.HolomorphicEquiv",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/HolomorphicEquiv.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/HolomorphicEquiv.lean",
+      "upstream_sha256": "1f0bb17a72921f75213f491964a68c772dff6e9a06add13bc17148c4821b4f2e",
+      "local_sha256": "5d7b804f1f4723f7b8ca0a04e80c109ab7ac461feb7d62f7b5f9c0e3bb14a8f6",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Analysis.Potential.PoissonDirichlet",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Analysis/Potential/PoissonDirichlet.lean",
+      "upstream_file": "RiemannDynamics/Analysis/Potential/PoissonDirichlet.lean",
+      "upstream_sha256": "b70650720892d2ca4f7ff52969a535f2cd86a1aaff4750de93d3a2da73eb6de6",
+      "local_sha256": "422f803e1174d56ae0bd7be3c6974a784d1c8cda8e0f3840e75590d19806cf1a",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Analysis.Potential.Subharmonic",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Analysis/Potential/Subharmonic.lean",
+      "upstream_file": "RiemannDynamics/Analysis/Potential/Subharmonic.lean",
+      "upstream_sha256": "9db501e6a0d5eb954d42a58c9f700d4426c78032531b159f3b097d71d7106ee3",
+      "local_sha256": "0776210f9b09f6ed21ffe4c86c49c66a01c03a705b968a2554f33f7283f22301",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Analysis.Potential.HarmonicHarnack",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Analysis/Potential/HarmonicHarnack.lean",
+      "upstream_file": "RiemannDynamics/Analysis/Potential/HarmonicHarnack.lean",
+      "upstream_sha256": "96c7d9623411614f7b241d849876276645a2a4c5be1358b40017513476ee1e83",
+      "local_sha256": "ea3320eec632fdf86c172eb8928a75247ccc73463e00482a320aac13c6343a47",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Analysis.Potential.PerronEnvelope",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Analysis/Potential/PerronEnvelope.lean",
+      "upstream_file": "RiemannDynamics/Analysis/Potential/PerronEnvelope.lean",
+      "upstream_sha256": "47fcdaa1a97792ea299762f2e864276fb6ab10770ada96a4dd03d803283f0d9e",
+      "local_sha256": "fe5634aafc62133591865fc5f2288764f01241055aceaefbb124ae25e1d19132",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Analysis.GrotzschRing.RingPotential",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Analysis/GrotzschRing/RingPotential.lean",
+      "upstream_file": "RiemannDynamics/Analysis/GrotzschRing/RingPotential.lean",
+      "upstream_sha256": "e820d11f5438e086d6678847ead91ca993181e52242847ac42290eb11b574810",
+      "local_sha256": "c3ae59a600b92efa5d2f93f445dfb070930541ac59e7caf4b7b4a7ba141ee776",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.HarmonicTransfer",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/HarmonicTransfer.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/HarmonicTransfer.lean",
+      "upstream_sha256": "946936743f6c0e9b35737760f2b58fc5b537ba45931e82db206855c6dfe84e31",
+      "local_sha256": "b5ba91a41317987033a42d572db4f10f630e5a5e84b12a50c3e1f479fc9eba3a",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.SurfaceHarmonic",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/SurfaceHarmonic.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/SurfaceHarmonic.lean",
+      "upstream_sha256": "c7feaa9c09c511b56363090db1ae0a9f09ce0cd6399ec61e072681f75b868933",
+      "local_sha256": "3182fe60d599a4822c0ca26cb099bff7229eed8e90b8b10609ac91e96495c280",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.GreensFunction.Basic",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/GreensFunction/Basic.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/GreensFunction/Basic.lean",
+      "upstream_sha256": "574012561591520ab178b9597f0dfad212d4494cf5fc9016a3b4c92fe64409e3",
+      "local_sha256": "1cd17d588c3a086160d88245bf22c717fb2199ec6d849696bf3eec48b9477be2",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.GreensFunction.Envelope",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/GreensFunction/Envelope.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/GreensFunction/Envelope.lean",
+      "upstream_sha256": "184dd088d29baa6813ea8d50ad53fc2192cff00478d6f453ad5af622a8798db4",
+      "local_sha256": "4d7ed122248ae04fd6f3fae0e8fbc358eec12114feb79bcb0015fbbc7de3d149",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.GreensFunction.GreenMap",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/GreensFunction/GreenMap.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/GreensFunction/GreenMap.lean",
+      "upstream_sha256": "55e5ccdb5278bea9e20544a8226b1d4d5969a0a704fc1a1020f8a969cfeb56dd",
+      "local_sha256": "5ae8e2dc671972366fb8524ed6a9d5baa3200204fb7eb1519c4c94f6640c2198",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.GreensFunction.Injective",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/GreensFunction/Injective.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/GreensFunction/Injective.lean",
+      "upstream_sha256": "4499199c3bccb5a5af763a0bee7b7031719db67725453e43f9b9e7b322814afd",
+      "local_sha256": "0ad44e08492a10e8193477e1db0223726cba37142c7b22a630f8377e5daf6437",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.PathCover",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/PathCover.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/PathCover.lean",
+      "upstream_sha256": "d02e7796ded2ace3a7d30e37f6c857560bb1146e660ec8d14331847fd411b275",
+      "local_sha256": "cab4839eba2e4344e3f15f33ac9b35d2cb33b37e3888e0173d4c701325449c63",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.BoundedWanderingDomains.UnitDiscShift",
+      "file": "LowDimensionalTopology/External/Uniformization/BoundedWanderingDomains/UnitDiscShift.lean",
+      "upstream_file": "BoundedWanderingDomains/UnitDiscShift.lean",
+      "upstream_sha256": "2d374696e66d97529362543e5eb3d2d95308f634b7c6043ed10f81267144a263",
+      "local_sha256": "1d552f3e16cbea56d0bd514cbda731080d962e5d9346df6cf5f48ba5a074c6ba",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.BoundedWanderingDomains.RiemannMappingFull",
+      "file": "LowDimensionalTopology/External/Uniformization/BoundedWanderingDomains/RiemannMappingFull.lean",
+      "upstream_file": "BoundedWanderingDomains/RiemannMappingFull.lean",
+      "upstream_sha256": "cd70dcd058cec76d1db5b696be1bb51d585be8c076f11943bc6ffb068a1469ba",
+      "local_sha256": "06f7310b6ff72ec255c3b65a7ae8f1b8d26385728496de0242a0ba86b52d8761",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Normalize subtraction in one simp step and omit a redundant ring tactic; statements unchanged",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.GreenSymmetry.Transport",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/GreenSymmetry/Transport.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/GreenSymmetry/Transport.lean",
+      "upstream_sha256": "ba3275fca3abbe02dc37e58d31fe559da448d841c7552506f0246c4dfd653729",
+      "local_sha256": "a5c060816c6bf52abd00ed7c24068ebf52285ad3f5adb7dd79cd08932d070e84",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Omit two unused grid/primitives helper results",
+        "Use the fully proved Yury Kudryashov Riemann mapping theorem with identical mapping conclusion",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.GreenSymmetry.Symmetry",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/GreenSymmetry/Symmetry.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/GreenSymmetry/Symmetry.lean",
+      "upstream_sha256": "5be39e33a5d65502fb2aab993a9bc0781621b987337913f82c5364c84578d9e2",
+      "local_sha256": "96de1394d3f01b62b250ed7cfbdd0d13197436ddb50605799ce0801b850e2307",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.Myrberg.DeckSum",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/Myrberg/DeckSum.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/Myrberg/DeckSum.lean",
+      "upstream_sha256": "57a1a90bfe68301f4af2789bb807a8be670c93462554915ed086085def8c3813",
+      "local_sha256": "663bc96576e99dc969820a74bba68bf725216a4d31b9b41575cfd32e65e9588b",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.Myrberg.Transfer",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/Myrberg/Transfer.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/Myrberg/Transfer.lean",
+      "upstream_sha256": "a4285f99a88be6d55338ffca54ee7dd2a1d6495337818ae3fe4597cf22fdc6a6",
+      "local_sha256": "afed98600fce3484a12079c1267ccdcb015a51555a170e20b95e18ab29977d5f",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.Pieces",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/Pieces.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/Pieces.lean",
+      "upstream_sha256": "ee7eebbe4de8ab0be79e7fd443058251f5fcd55c02676d79bfe2d555ab5e0bdb",
+      "local_sha256": "98959ff4ea95093bd667eb816f8ea50580f14f0912124482234393306ed35e2b",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.Harnack",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/Harnack.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/Harnack.lean",
+      "upstream_sha256": "6fecbd3874c72c1573243a6f634b99d5c7484cd0b218c15cc4bc3d939d35023c",
+      "local_sha256": "fc55e69ddc857673e5ff189ec6752ccd7f5bbf4f138b9a12d3d9f82896195c22",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.DriftBound",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/DriftBound.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/DriftBound.lean",
+      "upstream_sha256": "4f6ad480fa49240055b08ee941a02d1264a78143deb216725f1099185f1ecf4d",
+      "local_sha256": "3a25a680e31db6efebccb2e04db71251c6bc3406ee8c0976fd0a98dfd84247db",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.ExteriorBound",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/ExteriorBound.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/ExteriorBound.lean",
+      "upstream_sha256": "6fbaa2bfd7545f9faaea4473ced278dcfb5899f55933760c705837a01c5e3f3d",
+      "local_sha256": "477f3d60363de83ccc83d38660cd8f5184aa50b9fe47628bf829c20a45f85690",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.Barrier",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/Barrier.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/Barrier.lean",
+      "upstream_sha256": "9f173f035f478e570699e583b55d47c8e6892c1be9e47cf6d806f58af42c2bb0",
+      "local_sha256": "07ad53b3945511d2f88642c10138eca7f1679e1f6c6aa22b7bd63fcccb84b366",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.Limit",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/Limit.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/Limit.lean",
+      "upstream_sha256": "bd2d555544323e67e1f502ec39a5f6cde0547b879f4b81341b8a8a3a4ec9baa3",
+      "local_sha256": "84124625e77974e4efc46a4afb5f9303ffd26073bf561b7037f8d8b19eae154d",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.DipoleMap",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/DipoleMap.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/DipoleMap.lean",
+      "upstream_sha256": "a1075f0717033e25b087143cc385362fd4cf076995322432b735f02d9c5ebc9e",
+      "local_sha256": "f92c6267cf67f6c665769ce4b905d6ed8222fb5cec9be1a45c92a918dd8269b4",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.Injective",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/Injective.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/Injective.lean",
+      "upstream_sha256": "981cd7f113d6ced3a1910f4e27725732a8fa8070b216175cea580d1de45d504d",
+      "local_sha256": "cf69d7a3386db878cdb615f8bcdab6fe1b1949da503a6a0a2ea07c9f80287be9",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Perron.BipolarGreen.Assembly",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Perron/BipolarGreen/Assembly.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Perron/BipolarGreen/Assembly.lean",
+      "upstream_sha256": "63c9931f49cd5bb7fa8f2262ca464e7286637d7c67c02600abcb8bee2157490f",
+      "local_sha256": "4be5449fe83df3a142dc95ac5d7af13f99a02d02682e755ac197a2a962589082",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    },
+    {
+      "module": "LowDimensionalTopology.External.Uniformization.RiemannDynamics.Uniformization.Trichotomy",
+      "file": "LowDimensionalTopology/External/Uniformization/RiemannDynamics/Uniformization/Trichotomy.lean",
+      "upstream_file": "RiemannDynamics/Uniformization/Trichotomy.lean",
+      "upstream_sha256": "af2622a655b005d1748ccbbf0910725caa15a00c5b2b692a1c94e75ee0a05ee8",
+      "local_sha256": "0246e6f8f3882e3db7926a54e897814f84314abd8c611f6100bd8d863b923d13",
+      "changes": [
+        "Project module import paths",
+        "Explicit public imports and sections",
+        "Replace unused grid/TauCeti interface imports by the smaller proved Riemann mapping closure",
+        "Retained per-file upstream copyright/authorship and added precise adaptation provenance"
+      ]
+    }
+  ],
+  "license_file_changes": []
+}

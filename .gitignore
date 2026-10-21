@@ -1,0 +1,7 @@
+# cache and other artifacts produced by Lean's Lake build tool
+.lake/
+
+# Local Archon runtime state, agent tools, prompts and private logs.
+.archon/
+.claude/
+__pycache__/

@@ -1,0 +1,1227 @@
+{
+  "upstream": "https://github.com/LeanPool/lean-pool",
+  "commit": "86da5902e640ceb44e53f88c4a04f870dc062126",
+  "license": "Apache-2.0",
+  "authors": [
+    "Ryan McCorvie",
+    "Jack McCarthy"
+  ],
+  "scope": "Minimal two-module extension over the existing three-module polygonal Jordan port, providing genuine arbitrary polygonal closed-region triangle meshes. No external Lake package, toolchain or dependency pin is introduced. Existing external metadata and three-module bodies remain unchanged.",
+  "license_file": "LowDimensionalTopology/External/LeanPool/LICENSE",
+  "existing_dependency_manifest": "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/UPSTREAM.json",
+  "files": [
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision",
+      "file": "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/Moise/LineSubdivision.lean",
+      "upstream_file": "LeanPool/ClassificationOfSurfaces/Moise/LineSubdivision.lean",
+      "upstream_git_blob_sha1": "ca9309822b2c027b55983791387af7c7d35aa20d",
+      "upstream_sha256": "849659ea8d3c7ec33c71d7f469eec49cf610dedff1536b0edca4d4ccb509e1a9",
+      "local_sha256": "e21e85c08643487ec0cc269c6c727ebd7109be8eefc35a4f388eef5b08239b4b",
+      "changes": [
+        "Project-relative LeanPool imports",
+        "All imports explicitly public"
+      ],
+      "declaration_mapping_rule": "All public global declaration names and theorem statements retain their upstream namespaces unchanged; only containing module paths and imports change."
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron",
+      "file": "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/Moise/PolygonalPolyhedron.lean",
+      "upstream_file": "LeanPool/ClassificationOfSurfaces/Moise/PolygonalPolyhedron.lean",
+      "upstream_git_blob_sha1": "b4a0abd79c24b5a9ad7557a9ca197cebfe248f84",
+      "upstream_sha256": "a82323a1143491ca366fd2640c1e7764799c3a519e552c06b1586ff731135c94",
+      "local_sha256": "6faa6679278cf67047a887c1ac6718bb064edc5c95b70d1cfb19133eaee4a22c",
+      "changes": [
+        "Project-relative LeanPool imports",
+        "All imports explicitly public"
+      ],
+      "declaration_mapping_rule": "All public global declaration names and theorem statements retain their upstream namespaces unchanged; only containing module paths and imports change."
+    }
+  ],
+  "public_declaration_mapping": [
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineBasisOfTriangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineBasisOfTriangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv_apply",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv_apply",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv_image_convexHull",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv_image_convexHull",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv_apply_lineMap",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleAffineEquiv_apply_lineMap",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineIndependent_plane_triple_of_det_ne_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineIndependent_plane_triple_of_det_ne_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_inter_affine_zero_of_nonneg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_inter_affine_zero_of_nonneg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_inter_affine_zero_of_nonneg_set",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_inter_affine_zero_of_nonneg_set",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_inter_of_affine_separation",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_inter_of_affine_separation",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_image_inter_of_affine_separation",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.convexHull_image_inter_of_affine_separation",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.planePoint",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.planePoint",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.planePoint_apply_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.planePoint_apply_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.planePoint_apply_one",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.planePoint_apply_one",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitPosition",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitPosition",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitPosition_injective",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitPosition_injective",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_triangle0_affineIndependent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_triangle0_affineIndependent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_triangle1_affineIndependent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_triangle1_affineIndependent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_triangle2_affineIndependent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_triangle2_affineIndependent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianX",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianX",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianY",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianY",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianX_apply",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianX_apply",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianY_apply",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.cartesianY_apply",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceOuterAffine",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceOuterAffine",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceDiagonalAffine",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceDiagonalAffine",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceVertexAffine",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceVertexAffine",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceOuterAffine_planePoint",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceOuterAffine_planePoint",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceDiagonalAffine_planePoint",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceDiagonalAffine_planePoint",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceVertexAffine_planePoint",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceVertexAffine_planePoint",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.mem_convexHull_range_fin3_of_weights",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.mem_convexHull_range_fin3_of_weights",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.mem_standardTriangle_iff",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.mem_standardTriangle_iff",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_union",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplit_union",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceSplitMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitPosition",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitPosition",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitPosition_injective",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitPosition_injective",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplit_union",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplit_union",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.referenceEdgeSplitMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.parameter_pos",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.parameter_pos",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.parameter_lt_one",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.parameter_lt_one",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.parameter_mem_Icc",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.parameter_mem_Icc",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.mem_segment",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.mem_segment",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.apply_eq_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.apply_eq_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.ne_left",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.ne_left",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.ne_right",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.ne_right",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.eq_reverse",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.eq_reverse",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.eq_of_mem_segment_of_apply_eq_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.eq_of_mem_segment_of_apply_eq_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.neg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.affineCutPoint.neg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.standardTrianglePosition",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.standardTrianglePosition",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.standardTrianglePosition_affineIndependent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.standardTrianglePosition_affineIndependent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleCutParameter",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleCutParameter",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleLineSplitMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleLineSplitMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleLineSplitMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.triangleLineSplitMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.Triangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.Triangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEquiv",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEquiv",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_injective",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_injective",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.range_orderedVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.range_orderedVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_mem",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_mem",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_affineIndependent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_affineIndependent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.crossingPairs",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.crossingPairs",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.pairCutPosition",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.pairCutPosition",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinementPoints",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinementPoints",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.RefinedVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.RefinedVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oldRefinedVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oldRefinedVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.cutRefinedVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.cutRefinedVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oldRefinedVertex_val",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oldRefinedVertex_val",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.cutRefinedVertex_val",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.cutRefinedVertex_val",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.pairCutPosition_eq_reverse",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.pairCutPosition_eq_reverse",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.pairCutPosition_apply_eq_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.pairCutPosition_apply_eq_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.crossingPairs_neg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.crossingPairs_neg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinementPoints_neg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinementPoints_neg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinedVertexNegEquiv",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinedVertexNegEquiv",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinedVertexNegEquiv_val",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinedVertexNegEquiv_val",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelPosition",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelPosition",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelVertex_val",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelVertex_val",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelPosition_eq_affineReference",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictModelPosition_eq_affineReference",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictLocalEmbedding",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictLocalEmbedding",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictLocalMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictLocalMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictLocalMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictLocalMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeLocalMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeLocalMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeLocalMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeLocalMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVertices",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVertices",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVertices_val",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVertices_val",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVerticesEmbedding",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVerticesEmbedding",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictMeshFor",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictMeshFor",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictMeshFor_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictMeshFor_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeMeshFor",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeMeshFor",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeMeshFor_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeMeshFor_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeModelPosition",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeModelPosition",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeModelPosition_eq_affineReference",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeModelPosition_eq_affineReference",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVertices",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVertices",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVertices_val",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVertices_val",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVerticesEmbedding",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVerticesEmbedding",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeMeshFor",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeMeshFor",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeMeshFor_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeMeshFor_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeNegativeMeshFor",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeNegativeMeshFor",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeNegativeMeshFor_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeNegativeMeshFor_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_perm_affineIndependent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_perm_affineIndependent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.range_orderedVertex_perm",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.range_orderedVertex_perm",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.PositiveStrictOrdering",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.PositiveStrictOrdering",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.NegativeStrictOrdering",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.NegativeStrictOrdering",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.PositiveEdgeOrdering",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.PositiveEdgeOrdering",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.NegativeEdgeOrdering",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.NegativeEdgeOrdering",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oldVerticesEmbedding",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oldVerticesEmbedding",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.unchangedMeshFor",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.unchangedMeshFor",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.unchangedMeshFor_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.unchangedMeshFor_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsMonochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsMonochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsMonochromatic.of_neg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsMonochromatic.of_neg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsMonochromatic.reindex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsMonochromatic.reindex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVertices_f",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictVertices_f",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVertices_f",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeVertices_f",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.RefinedTrianglesMonochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.RefinedTrianglesMonochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictTriangles_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictTriangles_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeTriangles_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeTriangles_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictPatternTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictPatternTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgePatternTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgePatternTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_index_of_mem_strictPattern",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_index_of_mem_strictPattern",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_index_of_mem_edgePattern",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_index_of_mem_edgePattern",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictMeshFor_triangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictMeshFor_triangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeMeshFor_triangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeMeshFor_triangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeMeshFor_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictNegativeMeshFor_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeNegativeMeshFor_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeNegativeMeshFor_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictPattern_monochromatic_positive",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictPattern_monochromatic_positive",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictPattern_monochromatic_negative",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.strictPattern_monochromatic_negative",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgePattern_monochromatic_positive",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgePattern_monochromatic_positive",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgePattern_monochromatic_negative",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgePattern_monochromatic_negative",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localOldVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localOldVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localCutVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localCutVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localOldVertex_val",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localOldVertex_val",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localCutVertex_apply_eq_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localCutVertex_apply_eq_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementTriangles_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localRefinementTriangles_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinedMeshTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refinedMeshTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_of_mem_localMeshTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_of_mem_localMeshTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affineIndependent_of_mem_localMeshTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affineIndependent_of_mem_localMeshTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.local_child_vertex_old_or_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.local_child_vertex_old_or_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles_inter",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.localMeshTriangles_inter",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.convexHull_child_subset_parent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.convexHull_child_subset_parent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.child_vertex_mem_parent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.child_vertex_mem_parent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_vertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_vertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeEdgePoints",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeEdgePoints",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeEdgePoints_subset_parentPoints",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeEdgePoints_subset_parentPoints",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_nonneg_of_mem_parent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_nonneg_of_mem_parent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.parent_inter_oppositeCoord_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.parent_inter_oppositeCoord_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.childEdgeTrace",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.childEdgeTrace",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.child_inter_oppositeEdge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.child_inter_oppositeEdge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_oppositeEdgePoints_eq",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_oppositeEdgePoints_eq",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affine_apply_injectiveOn_segment",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affine_apply_injectiveOn_segment",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.eq_endpoint_of_mem_segment_apply_zero_of_mul_nonneg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.eq_endpoint_of_mem_segment_apply_zero_of_mul_nonneg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affineIndependent_subset_pair",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affineIndependent_subset_pair",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.old_vertex_mem_of_oppositeCoord_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.old_vertex_mem_of_oppositeCoord_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_old_edge_or_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_old_edge_or_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_mem_oppositeEdgeHull",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_mem_oppositeEdgeHull",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_eq_endpoint_or_cut",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_eq_endpoint_or_cut",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_eq_endpoint_of_mul_nonneg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_eq_endpoint_of_mul_nonneg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_eq_endpoint_of_ne_opposite",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_eq_endpoint_of_ne_opposite",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_eq_endpoint_of_edge_in_line",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.trace_vertex_eq_endpoint_of_edge_in_line",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.childEdgeTrace_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.childEdgeTrace_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.convexHull_inter_of_signed_three_point_subsets",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.convexHull_inter_of_signed_three_point_subsets",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.convexHull_inter_of_two_point_subsets",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.convexHull_inter_of_two_point_subsets",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.TransverseToEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.TransverseToEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter_of_parent_inter_card_two",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter_of_parent_inter_card_two",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertexSupportCoord",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertexSupportCoord",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertexSupportCoord_vertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertexSupportCoord_vertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertexSupportCoord_nonneg_of_mem_parent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertexSupportCoord_nonneg_of_mem_parent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.parent_inter_vertexSupportCoord_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.parent_inter_vertexSupportCoord_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.old_vertex_mem_child_of_position_mem",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.old_vertex_mem_child_of_position_mem",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter_of_parent_inter_card_zero",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter_of_parent_inter_card_zero",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter_of_parent_inter_card_one",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter_of_parent_inter_card_one",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_lineRefinementTriangles_iff",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_lineRefinementTriangles_iff",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_of_mem_lineRefinementTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_of_mem_lineRefinementTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affineIndependent_of_mem_lineRefinementTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.affineIndependent_of_mem_lineRefinementTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementTriangles_inter",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_subdivides",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_subdivides",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_isMonochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_isMonochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_preserves_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.lineRefinementMesh_preserves_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_subdivides",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_subdivides",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_preserves_monochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_preserves_monochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_isMonochromatic_of_mem",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.refineByLines_isMonochromatic_of_mem",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.LineSubdivision"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeNormalLinear",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeNormalLinear",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_initial",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_initial",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_terminal",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_terminal",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_eq_zero_of_mem_edgeSegment",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_eq_zero_of_mem_edgeSegment",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_surjective",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_surjective",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_edgeLine_nonneg",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_edgeLine_nonneg",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_edgeLine_nonpos",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_edgeLine_nonpos",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLines",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLines",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_mem_edgeLines",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.edgeLine_mem_edgeLines",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingRadius",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingRadius",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingRadius_pos",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingRadius_pos",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_subset_enclosingBall",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_subset_enclosingBall",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingTriangleVertices",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingTriangleVertices",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingTriangleVertices_affineIndependent",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingTriangleVertices_affineIndependent",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedBall_subset_enclosingTriangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedBall_subset_enclosingTriangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.enclosingMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_subset_enclosingMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_subset_enclosingMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementMesh_isMonochromatic",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementMesh_isMonochromatic",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_subset_arrangementMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_subset_arrangementMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.convex_arrangementTriangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.convex_arrangementTriangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isClosed_arrangementTriangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isClosed_arrangementTriangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangleCarrier_interior_nonempty",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangleCarrier_interior_nonempty",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closure_interior_arrangementTriangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closure_interior_arrangementTriangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangle_interior_disjoint_carrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangle_interior_disjoint_carrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangle_interior_side",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangle_interior_side",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.IsInteriorArrangementTriangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.IsInteriorArrangementTriangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh_triangle_mem",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh_triangle_mem",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangleCarrier_subset_closedRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.arrangementTriangleCarrier_subset_closedRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh_support_subset",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh_support_subset",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interiorRegion_subset_closedRegionMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interiorRegion_subset_closedRegionMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegionMesh_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.disjoint_carrier_exteriorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.disjoint_carrier_exteriorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.disjoint_closedRegion_exteriorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.disjoint_closedRegion_exteriorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.frontier_closedRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.frontier_closedRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_closedRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_closedRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isConnected_closedRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isConnected_closedRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalPolyhedron"
+    }
+  ]
+}

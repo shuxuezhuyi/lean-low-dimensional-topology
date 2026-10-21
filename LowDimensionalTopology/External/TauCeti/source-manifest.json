@@ -1,0 +1,578 @@
+{
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "commit": "1f9b4414105d86e487a4ac4c3d3397076a44d0d2",
+  "license": "Apache-2.0",
+  "local_changes": "Local import prefixes; nine proof-only imports made public under the project module convention, with corresponding historical comments clarified. Declaration namespaces, original authors and proof bodies retained.",
+  "files": [
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/EulerCharacteristic/FiniteCWType.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/EulerCharacteristic/FiniteCWType.lean",
+      "upstream_sha256": "84509eaf7dd86eda3976700fb8d96b80811c2a0e7135930ae1d5c1e00b8e4633",
+      "sha256": "c690c0b05d8723b04b9a45d2e04b30880a6df4efc5285d246da1800550aac602"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/EulerCharacteristic/Singular.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/EulerCharacteristic/Singular.lean",
+      "upstream_sha256": "89d3e7e2becfb52e5bd95a11c95956d8c22534960b3fdb3fc044dcfa1c38e166",
+      "sha256": "6b3aa79f2217fcad0a2528c86e2091c93ed1d6971055d7523da10ebe12a27296"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Homotopy/Invariance.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Homotopy/Invariance.lean",
+      "upstream_sha256": "aec5e36debe8e5cca5b011d357ce82942a59144d8533751529f4ee5486c81afd",
+      "sha256": "2ddeac7c74dd981abd19d37deca702fb496a7c6b0746a9e7a87f640c26bcdf8f"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/FiniteCWType.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/FiniteCWType.lean",
+      "upstream_sha256": "7324b73c04c85aee01474e9135f9581b670e45ae6951b9e173c9552cfe320deb",
+      "sha256": "c7c59b7cd537af74b670f5c0c09182294d4aa9642dcc72aa341f74a6e49f5aca"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/Comparison.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/Comparison.lean",
+      "upstream_sha256": "c8e66684f1ee20d5d3e2b84004823093635bbd161e65638e436f65bb05f3b268",
+      "sha256": "42b2e55ba1b29e890176f1eab6f14502d8a9ea089dd3e1fba9c1a1ba6167389d"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/EulerCharacteristic/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/EulerCharacteristic/Basic.lean",
+      "upstream_sha256": "ba86451ea778cf2f63668c7d41fdbc4961421539904e525c6553585dbc133621",
+      "sha256": "4b36f6676b28469b58639b28b1be63458b20781ff90abf58f7be9f610f9d21e7"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homology/HomotopyInvariance.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homology/HomotopyInvariance.lean",
+      "upstream_sha256": "9de239ae82b5832979de2e066eda594e41c928efa106cc62fbe0547d96a525b9",
+      "sha256": "69e84615dcae0f01e7a67ddeffeeeb584065b8e38168af5c7df2df5fae9a34f6"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Empty.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Empty.lean",
+      "upstream_sha256": "b61088cbd7264aa10ccda5c99f9550a6b1507be2aeba17cd3b94fb9c514d3f4c",
+      "sha256": "7a6d769471b4837e43bd9b158a4266c09ace88efeae696479a81c9ac761da171"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Homotopy/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Homotopy/Basic.lean",
+      "upstream_sha256": "63693ceca3faa608df6f34d746164007e7e3dac331ce4e55e415a26cf0b481b5",
+      "sha256": "2ad949152816ca2259025d3a74a2b9922bf6bdbcbf14ac2d826ef66e3e575335"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/CWType.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/CWType.lean",
+      "upstream_sha256": "a3c480ca7f8aeb14d5497baa1c336db58a11e4809ca698d4a4f6444d68842007",
+      "sha256": "a3c480ca7f8aeb14d5497baa1c336db58a11e4809ca698d4a4f6444d68842007"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/Category/TopPair.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/Category/TopPair.lean",
+      "upstream_sha256": "b076383dfb32298b510693f622d57e71b6b90ca75342ce0e0fec05dfa8447774",
+      "sha256": "b076383dfb32298b510693f622d57e71b6b90ca75342ce0e0fec05dfa8447774"
+    },
+    {
+      "upstream_path": "TauCeti/Algebra/Homology/EulerCharacteristic/ChainComplex.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Algebra/Homology/EulerCharacteristic/ChainComplex.lean",
+      "upstream_sha256": "756a8d7317a2dbae38935bbebb1d4675e3bbde63618e8a64655b3cbe338cb6da",
+      "sha256": "6a170adb8a6af7433084ebeacfda909c6d85dc519ed692de7101ddfd32832d26"
+    },
+    {
+      "upstream_path": "TauCeti/Algebra/Homology/Homotopy.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Algebra/Homology/Homotopy.lean",
+      "upstream_sha256": "0cf68c459ddc6f23b87957e28e82039c199afde3aa62b711f93865d64f2942ad",
+      "sha256": "df214a8a3980128c09a5e7d2830da1c54da84ef1ac0ec67ff776b425543e494c"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/Coproduct.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/Coproduct.lean",
+      "upstream_sha256": "0a251671bf0d48d080eedeebf75ec21bbcc2d5904287f72bcaea7a91f26d7315",
+      "sha256": "1a767c4d4aa5af3066c3c1a9f9437ca5d6c274df510b477b4895b14815c580e6"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/Homology.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/Homology.lean",
+      "upstream_sha256": "c6f4ac41ad18bcf4cb1a4b92bd6d9ffd0c04c0b10c4f0bb4b3cccc3a4dd9f8fb",
+      "sha256": "9c72d1207a48bf33c1a11e53a394e2f240e3dc6cdb467ad0015e5a7b9b2444e1"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialObject/ChainHomotopy.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialObject/ChainHomotopy.lean",
+      "upstream_sha256": "f306bec6c6b9724fe2ae857c74acdc5d14bbf903f41ea51ac06bc584e3af2ef6",
+      "sha256": "f306bec6c6b9724fe2ae857c74acdc5d14bbf903f41ea51ac06bc584e3af2ef6"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homology/Relative/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homology/Relative/Basic.lean",
+      "upstream_sha256": "5412227b1b382c14725d504b41788a89015c957967f7a96da7ac2102339264ad",
+      "sha256": "b9d3d57c292ccd3843cc6cf040d14cae05e43c56f6a0ac3ffaf69d982e95029b"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homotopy.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homotopy.lean",
+      "upstream_sha256": "4959a50fc0600d2e22424ca9bdf8246f8cfcf41f27269bb1948c40972955c42a",
+      "sha256": "4959a50fc0600d2e22424ca9bdf8246f8cfcf41f27269bb1948c40972955c42a"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/DirectedUnion.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/DirectedUnion.lean",
+      "upstream_sha256": "6a3ff1d5d918fb0e91a1dcf69fd5e1faa150d98e39754d2e359a6072ef7bafc1",
+      "sha256": "b233e5017d475a6b3bb537df6f5468d29444d6f9c7a89686cc277b880ea571aa"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Relative.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Relative.lean",
+      "upstream_sha256": "476bf4c3b8c7eff639f2ce7778c0f51bb51aaceebf4c0c056b22d3e21097b144",
+      "sha256": "2aa378aff6cb501ff8d0af73b7a3ca75f61adccbb6354d424b58d92a4a28201c"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/CompactSupport.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/CompactSupport.lean",
+      "upstream_sha256": "17efceb946a0034484eee23b1b2954a7888b43cf34c7bb7aed4acb52e90348a4",
+      "sha256": "17efceb946a0034484eee23b1b2954a7888b43cf34c7bb7aed4acb52e90348a4"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/Skeleton/Colimit.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/Skeleton/Colimit.lean",
+      "upstream_sha256": "2f14caff3cdf1ca75c4173908645eef54c0d79c18ced09fa0c3531272a54a5cf",
+      "sha256": "e5f231d5c86cddde14ded9fe0251fd08c895182ea720f40d755739773bee095e"
+    },
+    {
+      "upstream_path": "TauCeti/Algebra/Category/ModuleCat/Finrank.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Algebra/Category/ModuleCat/Finrank.lean",
+      "upstream_sha256": "6d48a95d1990e90dee4818b9a49dd71aa68a52a4dbd601b2b38533c9e7d288d1",
+      "sha256": "6d48a95d1990e90dee4818b9a49dd71aa68a52a4dbd601b2b38533c9e7d288d1"
+    },
+    {
+      "upstream_path": "TauCeti/Algebra/Homology/HomologicalComplex/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Algebra/Homology/HomologicalComplex/Basic.lean",
+      "upstream_sha256": "4b486601ef95bd0ce58459d957c9f4c4174b396dda1883b1eed3a89f2b837d01",
+      "sha256": "4b486601ef95bd0ce58459d957c9f4c4174b396dda1883b1eed3a89f2b837d01"
+    },
+    {
+      "upstream_path": "TauCeti/Algebra/Homology/ShortComplex/Colimit.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Algebra/Homology/ShortComplex/Colimit.lean",
+      "upstream_sha256": "0344ea6943fbc158c9a9e1a8233611e48cb828e0e31aefc24a5333f63ed57b2b",
+      "sha256": "0344ea6943fbc158c9a9e1a8233611e48cb828e0e31aefc24a5333f63ed57b2b"
+    },
+    {
+      "upstream_path": "TauCeti/Algebra/Homology/ShortComplex/ModuleCat.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Algebra/Homology/ShortComplex/ModuleCat.lean",
+      "upstream_sha256": "0b87bb599b4d05b10061b0b652a7424abdfadc0fee81428fe443f7be6fc60f1e",
+      "sha256": "0b87bb599b4d05b10061b0b652a7424abdfadc0fee81428fe443f7be6fc60f1e"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/CharacteristicMap.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/CharacteristicMap.lean",
+      "upstream_sha256": "b8c8a2d0ba4fb3730facc337311d58388a3ee9633d9f0ddfb2ec4529f1fbf2ac",
+      "sha256": "358d31ddf4fc57ec78cbf55c9e7e515b806f4b95dde4f89028662a0d76a592a4"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homology/Coproduct.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homology/Coproduct.lean",
+      "upstream_sha256": "2a216117146d2a34641dd32b025ad7cbac103d5678a531fd8b6c6cf1b95eb106",
+      "sha256": "2a216117146d2a34641dd32b025ad7cbac103d5678a531fd8b6c6cf1b95eb106"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Restrict.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Restrict.lean",
+      "upstream_sha256": "eb51def6ce8378ce28fa0278155b97dea8d322610633f9aaa9782dfc81c5c8f5",
+      "sha256": "eb51def6ce8378ce28fa0278155b97dea8d322610633f9aaa9782dfc81c5c8f5"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/TopAdj.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/TopAdj.lean",
+      "upstream_sha256": "dd25b8fc7e2208c829e0794ea2b98c598e7bfd277ca669e444abac5924189ae1",
+      "sha256": "c3e1ab7f23e6adeadd5ce5b6945d36ff8010fb7419a2c1d442d73a1a1de1f607"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Additivity.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Additivity.lean",
+      "upstream_sha256": "dbd12f31fcc61c5a2c6c4cb83c9135e84780a41dd9f43223326063593c5e6765",
+      "sha256": "18ea765fd3e1d0ceaae1c3d9a47e7d3d6bf1dc718f9089d2d7c84c63d5f7a1b7"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Basic.lean",
+      "upstream_sha256": "e80d4e2bf0d4045380331b131a9a7573c784644d119b91847ee1bec547d7387a",
+      "sha256": "e80d4e2bf0d4045380331b131a9a7573c784644d119b91847ee1bec547d7387a"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/DiskSphere.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/DiskSphere.lean",
+      "upstream_sha256": "eeb1a71856af8324ad67e76af5fc8e2e8c7fb4eeaee9f577d8de44137c79cbf1",
+      "sha256": "e653246bf2b579de8ab848ca7639a70c954bcfefa5eb2f2a2af4f5188733dc36"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean",
+      "upstream_sha256": "0af56e1ab8f9c14aab3c855142ef1bc490b91eadc9d7f6bc185ad9b596a1b78d",
+      "sha256": "0af56e1ab8f9c14aab3c855142ef1bc490b91eadc9d7f6bc185ad9b596a1b78d"
+    },
+    {
+      "upstream_path": "TauCeti/CategoryTheory/Limits/Shapes/Kernels.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/CategoryTheory/Limits/Shapes/Kernels.lean",
+      "upstream_sha256": "8ed2303a6fe5b85eaaaf76a8a880b93bf0973d97db8f91551a8d994746bc85ea",
+      "sha256": "8ed2303a6fe5b85eaaaf76a8a880b93bf0973d97db8f91551a8d994746bc85ea"
+    },
+    {
+      "upstream_path": "TauCeti/CategoryTheory/Limits/Shapes/Products.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/CategoryTheory/Limits/Shapes/Products.lean",
+      "upstream_sha256": "48ff855d64dafcb1741284fc0b606b4d257318bf2bd4032c891c54b475bcb0aa",
+      "sha256": "48ff855d64dafcb1741284fc0b606b4d257318bf2bd4032c891c54b475bcb0aa"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/Skeleton/Induction.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/Skeleton/Induction.lean",
+      "upstream_sha256": "8fe32cec025bb50f93064347b4a4eb3729e0c7b7a6d98805b88b4aebaa1a5001",
+      "sha256": "fbde15745efe7e1d2018fc57e83ed3ed9d8b1afd582741729115200170fafa9b"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/Category/TopCat/Subspace.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/Category/TopCat/Subspace.lean",
+      "upstream_sha256": "1c07f776650475c9220696ea5f0a5b8570d3f5fd216b65b77fa68337cf9a44c4",
+      "sha256": "1c07f776650475c9220696ea5f0a5b8570d3f5fd216b65b77fa68337cf9a44c4"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/SkeletonNeighborhood.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/SkeletonNeighborhood.lean",
+      "upstream_sha256": "6a7f485a5001e26d8cd5dd24babda4c91da75b3985bf069d84575c7089380d63",
+      "sha256": "f53f4c54430e0d84825b6648aecade66bdd47696f04932dade17a36e7a6678b2"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Excision.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Excision.lean",
+      "upstream_sha256": "837125a1cdafd63e467240b006c4e47040d9c86f1c0b8b52e8d201a7c6173599",
+      "sha256": "033c800facf1f704983e52c0575a8aa276c3d2978298a744e83d31d301022cd7"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Sphere.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Sphere.lean",
+      "upstream_sha256": "b0f15850d21e7cff1f619610e90eaa6772b9d71c4673cb8db58f8fef3cbbda81",
+      "sha256": "b1506fb3d995afb09e322178aa2bec9d70138e7299c77d2797ab389d2e2effec"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Module/Ball/Radial/Push.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/Ball/Radial/Push.lean",
+      "upstream_sha256": "060a7012d50a916d3668d234dd7578ab3349fdc1aefb95e4b7c35440047a217c",
+      "sha256": "2c9468d72233e4bebaaad4de7acfe193449d78695fa3b59f7c1f6f7ca9862a1e"
+    },
+    {
+      "upstream_path": "TauCeti/Geometry/Convex/ConvexSpace/PathConnectedSpaceStdSimplex.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Geometry/Convex/ConvexSpace/PathConnectedSpaceStdSimplex.lean",
+      "upstream_sha256": "2ea00f3f8d04a9b1c95e1f16104f295273b963a1320baf0ce2377b272a3e55d6",
+      "sha256": "2ea00f3f8d04a9b1c95e1f16104f295273b963a1320baf0ce2377b272a3e55d6"
+    },
+    {
+      "upstream_path": "TauCeti/Geometry/Convex/ConvexSpace/Topology.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Geometry/Convex/ConvexSpace/Topology.lean",
+      "upstream_sha256": "a1e552a10a39aa64438aab1b3fd4cc9a6a59bf88f5b81f7d547907082cfdf272",
+      "sha256": "a1e552a10a39aa64438aab1b3fd4cc9a6a59bf88f5b81f7d547907082cfdf272"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/OpenCells.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/OpenCells.lean",
+      "upstream_sha256": "f0d6a29eb6b0a6a39e18d246633d20c147bb7a59ff41fe46358d47c9a2721619",
+      "sha256": "f97048b78aa750e8fc0c1dfc1c9f2558e6d7958fc3279e42e0269cb40de5d138"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/Quotient.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/Quotient.lean",
+      "upstream_sha256": "af4fa0c9fa00b083a81ecba5b8a0c02b915cc9bacc53b71ec4a7eb41616de565",
+      "sha256": "af4fa0c9fa00b083a81ecba5b8a0c02b915cc9bacc53b71ec4a7eb41616de565"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/Skeleton/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/Skeleton/Basic.lean",
+      "upstream_sha256": "3f1ff85e9a99d339bf3ba044d5c2739d8209af31b55068dd28df2eae6152253f",
+      "sha256": "3f1ff85e9a99d339bf3ba044d5c2739d8209af31b55068dd28df2eae6152253f"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Cellular/Chains.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Cellular/Chains.lean",
+      "upstream_sha256": "20c5bd5418b30fa16154e93f2f3bc52a8c9e7ebe6ac6779016513412999db077",
+      "sha256": "62be0a8a5aafd149d40c8a2f51405b7f7896f66ab1fb88f607d1607d9da5b936"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Disk.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Disk.lean",
+      "upstream_sha256": "d10689e6fdfcfcd56ea3a8080ecc34aa2bdb8c4c55a19b2e26473f04d7227acf",
+      "sha256": "3e068651e958b5abfa2334d8bc9f453bfecee6fce261812eb8c6687f6a95da83"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homology/Excision.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homology/Excision.lean",
+      "upstream_sha256": "6ce87f049709c0766bb1940f24979f914ef41fd73ec3d84cd39b050fbf6a970d",
+      "sha256": "6e120ef2068dad57b29c55116250e00f0f399f1a31524f921f45531bf47ce646"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/MayerVietoris/Reduced.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/MayerVietoris/Reduced.lean",
+      "upstream_sha256": "9416e76a217607ec060bf475d99cbc880de961ca5b29c053df07d92e6ea460da",
+      "sha256": "ffc89179ac3dbe808a407cc74c5d5869d877383c1f80b7498c4b5373eb69610e"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Relative.lean",
+      "upstream_sha256": "14d047754495b9d797c33dc7d52611794f710e629206c9eb22d87bef3792a2c6",
+      "sha256": "c22e8077cb0d784e870b1dc1ea8a612dd47d4cfe8b4b64fc1a03b240383566fa"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Triple.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Triple.lean",
+      "upstream_sha256": "6db4412e4c3a4da02456121a100da97645579260cf307160b1266ed3c809dc3c",
+      "sha256": "8af563c6361ced1de7693ca4f4971e34a5751a5ee8059dd01fcf09cade82da07"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Sphere/Equator.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Sphere/Equator.lean",
+      "upstream_sha256": "ab6bdc21e8087381449148b34883427c0e2fff16f571affab87c1fe9b5a8ae4c",
+      "sha256": "6e6e84a0866fb35190a2a2e7ec15fa667b98fde2ed2360a7a203d0e82b57305e"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Sphere/Puncture.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Sphere/Puncture.lean",
+      "upstream_sha256": "86e663daba9e06bf1d8f2d2db9d223198b4bededdee77729e257e120ce71d988",
+      "sha256": "c00beb1a1cdc17c985a3cc1527aeb0f6c61909a8a8e7c323730aec7dc3c97e03"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Sphere/Zero.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Sphere/Zero.lean",
+      "upstream_sha256": "0e2a004c5293ec0df64f1fa8a00b36040fae0ff509642ef8931349fe8c5469ba",
+      "sha256": "6b32d1b8f759f8c4b01f69e0191fbcec70060e0e0c38dfe926866378183442d8"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/InnerProductSpace/LinearIsometry.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/InnerProductSpace/LinearIsometry.lean",
+      "upstream_sha256": "bd47a1c1dc1791b7172b2cbfe1dc34591a44bf8d6ba03da60c05b545427cfd44",
+      "sha256": "bd47a1c1dc1791b7172b2cbfe1dc34591a44bf8d6ba03da60c05b545427cfd44"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/InnerProductSpace/OrthogonalLast.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/InnerProductSpace/OrthogonalLast.lean",
+      "upstream_sha256": "a224f516cb97d901faa1ecf3024ee6897c1108c68a291e8b045ce907b2a27394",
+      "sha256": "a224f516cb97d901faa1ecf3024ee6897c1108c68a291e8b045ce907b2a27394"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Group/BallSphere.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Group/BallSphere.lean",
+      "upstream_sha256": "c5125c0d57c0aec0d01a0a4568423947ccf94724b523e667b8768e24562b0aff",
+      "sha256": "c5125c0d57c0aec0d01a0a4568423947ccf94724b523e667b8768e24562b0aff"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Module/Ball/Retraction.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/Ball/Retraction.lean",
+      "upstream_sha256": "69d1c3591868bee451b35069a1c09da4fd2c5ade5c262e078e12eecb312dbcc1",
+      "sha256": "69d1c3591868bee451b35069a1c09da4fd2c5ade5c262e078e12eecb312dbcc1"
+    },
+    {
+      "upstream_path": "TauCeti/Geometry/Sphere/LinearIsometry.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Geometry/Sphere/LinearIsometry.lean",
+      "upstream_sha256": "eef4caef62f668244e20c97e188140e59fef6d4ada9c6efa4429ce0c45a2bdf7",
+      "sha256": "eef4caef62f668244e20c97e188140e59fef6d4ada9c6efa4429ce0c45a2bdf7"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/Skeleton/Neighborhood.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/Skeleton/Neighborhood.lean",
+      "upstream_sha256": "331f2762fb18a7ed8c032244618ee39906d9c66392dd194c9f2bfc059eb8a0a5",
+      "sha256": "7788635de991aa59a604d8252333bbdf0c6085bcefd05c3a75a0ba5991902801"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homology/Restrict.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homology/Restrict.lean",
+      "upstream_sha256": "ff68dbe0e2a16ba4a017377d536e6c4e8f6fc078bffb7ed59a526856aeed31b8",
+      "sha256": "86bdcf3ba044ded0c9eeffabf5803c12f52146cc715bbb9233b40195a1da78f7"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Contractible.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Contractible.lean",
+      "upstream_sha256": "1c71ca6fec7c9019e6a6d674fbd30d4b82b936240989d5ec11436742b85eca67",
+      "sha256": "20191abd5eabb2b138df4c2a8a13526ab4d97607deb4c31dbe0be38dded24d93"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/MayerVietoris/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/MayerVietoris/Basic.lean",
+      "upstream_sha256": "935ee610d438e88c73896817c2333205468db2523e789b77a044fe4d9cbf2f13",
+      "sha256": "0843111208ea349aaa7357cff2d33c4af9b7937c964f64f4ced7b4f741853fc8"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Equiv.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Equiv.lean",
+      "upstream_sha256": "9a77557d5a60458941dd124002b23d7d1f48e519b685bc4d2723a2e54522cd70",
+      "sha256": "bf558fa997fb0a2bd8d9f394eaaf1234e247d21bae06a49c2e682fc841024e2d"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Module/Ball.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/Ball.lean",
+      "upstream_sha256": "130dae539e802fbf425bd6a25adbdf9330dba0a79b6c092de3bb1af42b9bc8fc",
+      "sha256": "1070698a6c6cbb7551403974f5f0e0ab13cdb6a6c4d138ef22543bef9ad875b0"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Module/FiniteDimension.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/FiniteDimension.lean",
+      "upstream_sha256": "dc6168ba4def35f8cc3a37e283924b1647519b32983e1954deaaa414cf66fe2f",
+      "sha256": "dc6168ba4def35f8cc3a37e283924b1647519b32983e1954deaaa414cf66fe2f"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Module/Normalize.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/Normalize.lean",
+      "upstream_sha256": "21ecba4bece3c84ea0138158d093b45d92aa911ce6a2ebe460654611568e599e",
+      "sha256": "21ecba4bece3c84ea0138158d093b45d92aa911ce6a2ebe460654611568e599e"
+    },
+    {
+      "upstream_path": "TauCeti/CategoryTheory/Abelian/DiagramLemmas/CokernelComp.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/CategoryTheory/Abelian/DiagramLemmas/CokernelComp.lean",
+      "upstream_sha256": "f2af205e2612637bcd2b51c4d96a4749c52e8b9c80197ca5fb537925bd5b7e2e",
+      "sha256": "cdaf979191298245e3d7a414f7ce6450e8f64bf4e3c5da09ed2106145d4d5064"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/CWComplex/Classical/Skeleton/CellDeformation.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/CWComplex/Classical/Skeleton/CellDeformation.lean",
+      "upstream_sha256": "4086fabe3ddcb1d37809b36e45bd9311e0839d6f49f7988cf90a4702d3eab5e0",
+      "sha256": "89eaf4e9fef5b9dc54c3859a2f3295ef27501c66f6f75807d92b59971992c3df"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/Category/TopTriple.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/Category/TopTriple.lean",
+      "upstream_sha256": "859bde30f13d00df13b361fd09cb398a6bf255559c22ee1ed214ec6d0b3c0b2d",
+      "sha256": "eb0a1a26ba4f055fd6d639cc85bf1c344b5ab6755c8b09f3d762099b5f29ed68"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/Homotopy/Cube/Radius.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/Cube/Radius.lean",
+      "upstream_sha256": "5f9b767dc6e81b44895fb5a1d9b94dedf8513d859f84847e9124c48e2a57cc90",
+      "sha256": "adbca1172706605245602eee1f3f871919f7064d652c79741b088bbb26a3b450"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/Homotopy/Path.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/Path.lean",
+      "upstream_sha256": "56e77fae4d8cab7b31c1fccfc6902bbbdaf5540e98403ecfe0b3b158ca4cc988",
+      "sha256": "40dbd9c5efcf0b607ed2d6dfb9e4bf341796db4a5e097ec6334536c12837ea1d"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/PathComponent.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/PathComponent.lean",
+      "upstream_sha256": "9ec207178d10fa529e38e31f60af425e976a8bfe6ff329db265501b54b8acd25",
+      "sha256": "576be0d50652aaeab5f50c0bbfab04cf5a24b43f6e4543bbcfabe4bf77132804"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homology/MayerVietoris.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homology/MayerVietoris.lean",
+      "upstream_sha256": "c6d455a70e84cb9e20ee10be0aec6ce615bb3de34c1fb57fb8f57fb811169847",
+      "sha256": "dda017c991c2b772d610c519ee36c56d0e97c553e60af9314abe119eeddf3b26"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/ReducedRelative.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/ReducedRelative.lean",
+      "upstream_sha256": "edc14f22a9c366bb57f5c8dca4bc7d3646e118c2842f58c2a56b5c1ea92bfb2e",
+      "sha256": "d131cb79cbc3ee44a384221329f859bf3ecf0487027d023a828458e6476e48c5"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Homotopy.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Homotopy.lean",
+      "upstream_sha256": "7187c3a0c74247e2aa4d2f6aa8e8cf9b1c4741b73b7061873fca88036aa2b273",
+      "sha256": "1a39ea0546780a407559135f7ca06a1135b228c420c22d372efadb29181b1d3c"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subspace.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subspace.lean",
+      "upstream_sha256": "379e0b82071f7b790303a7c44f1e1ff1ac039c4bae41b3220c3e6a54dff06d5b",
+      "sha256": "415472baa948198c7dff835f80e9a18db5208cf1909691d9e86844c9863939e4"
+    },
+    {
+      "upstream_path": "TauCeti/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/CategoryTheory/Limits/Shapes/ZeroMorphisms.lean",
+      "upstream_sha256": "5d8675ba21d3b35708d61c60e6b071f0860d4a896bc9cca03852467fe601a468",
+      "sha256": "5d8675ba21d3b35708d61c60e6b071f0860d4a896bc9cca03852467fe601a468"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/Homotopy/Cube/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/Cube/Basic.lean",
+      "upstream_sha256": "74548ffb020990ee4aeb940ee009be63d3a87c1efc99219d0607ab6a7a5482c2",
+      "sha256": "1867efa47906f41a43799c4a0865238b4a9640496ead7bcae522ac92d90b4989"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/Sets/FinTwo.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/Sets/FinTwo.lean",
+      "upstream_sha256": "c32d5effd9cacaa79404dea80eeeaa33b1e4b60270de47a446309737f4e15218",
+      "sha256": "c32d5effd9cacaa79404dea80eeeaa33b1e4b60270de47a446309737f4e15218"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/UnitInterval.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/UnitInterval.lean",
+      "upstream_sha256": "172f1cf91b64e0206f2b8b06d35bfcd55012c53f5f05ac0f5f5cb50ba8419306",
+      "sha256": "172f1cf91b64e0206f2b8b06d35bfcd55012c53f5f05ac0f5f5cb50ba8419306"
+    },
+    {
+      "upstream_path": "TauCeti/Algebra/Homology/HomologySequenceBiprod.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Algebra/Homology/HomologySequenceBiprod.lean",
+      "upstream_sha256": "14369c6c238d2f92dcb562c6d4e9b4d81cfa5301377c93689ae9bc3e717382d1",
+      "sha256": "14369c6c238d2f92dcb562c6d4e9b4d81cfa5301377c93689ae9bc3e717382d1"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Reduced.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Reduced.lean",
+      "upstream_sha256": "97cbd2ba5dd44f0184d05f9f458fd0d5c1a5c1e557e1c078af3f41f5098088e3",
+      "sha256": "baf729d9f4553f750fc596430c9a4d97a20481b698ae7e1c2e6e5ae44197fbf9"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/Homotopy.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/Homotopy.lean",
+      "upstream_sha256": "b850ba09ac2f1ddcbf7cf88810f66372c4cc9f36499279885214932e61e295f7",
+      "sha256": "000145c7f023eab8dc63b2d6bd780961e33c0b40e4d5657aa30370b664d36292"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Chains.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Chains.lean",
+      "upstream_sha256": "92f0eb875e9cc70c9e250789e59abfde7d4130cbc09fc363024e4aac83e8b204",
+      "sha256": "34d771f1366d98548f3dda37257b515193b613f30d719c4eb9d2fd6841580741"
+    },
+    {
+      "upstream_path": "TauCeti/Topology/PiCurry.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Topology/PiCurry.lean",
+      "upstream_sha256": "a745515992fddfb0dfb34b9fb0fe65b4adabe226c7c4b036370243dd3995843c",
+      "sha256": "a745515992fddfb0dfb34b9fb0fe65b4adabe226c7c4b036370243dd3995843c"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/SimplicialSet/Homology/Zero.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/SimplicialSet/Homology/Zero.lean",
+      "upstream_sha256": "27d4fb05690218aea424181383246aedd8da7b03ddfe2b79a7526f8ea2c140f7",
+      "sha256": "27d4fb05690218aea424181383246aedd8da7b03ddfe2b79a7526f8ea2c140f7"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/AffineChain.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/AffineChain.lean",
+      "upstream_sha256": "286a98a4581bebc97330dfe9292dd9d3dd0bdaf6ad0ea7e81a7f748cfa060777",
+      "sha256": "22808ab621670e6a7a9c82f2979626b48bb5223a308bf7ad7c494d7256829be2"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/Small/Basic.lean",
+      "upstream_sha256": "5f530edb386c48c0f67fc1b75dc064fe0f45c6cf88d07378e2964bc8a476c394",
+      "sha256": "305fbab227b5850b8c56baa8e3542f90e79b213b3c71cbe21a84e390a254cf2b"
+    },
+    {
+      "upstream_path": "TauCeti/AlgebraicTopology/Singular/Subdivision/Basic.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/Singular/Subdivision/Basic.lean",
+      "upstream_sha256": "9e51c9af793075ea3523c6fa671fa1a265b17ef60203a72a96a8f259d7effba1",
+      "sha256": "177b082bacd8d57bcbb1a63ce6a081a61c93b3bd6f5dd40c52d2de42c42d5858"
+    },
+    {
+      "upstream_path": "TauCeti/Analysis/Normed/Affine/Centroid.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Affine/Centroid.lean",
+      "upstream_sha256": "2707ebbce20c65d17002a698c94cafe43f2a3f7608a378ac36fc83bfef9a321b",
+      "sha256": "2707ebbce20c65d17002a698c94cafe43f2a3f7608a378ac36fc83bfef9a321b"
+    },
+    {
+      "upstream_path": "TauCeti/Geometry/Convex/ConvexSpace/Dist.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Geometry/Convex/ConvexSpace/Dist.lean",
+      "upstream_sha256": "c4f115900c0bc1ca656285602b5a2e181f3f732fda1cd132900748ffb4d0cb6a",
+      "sha256": "d0a3cec9d0c75a5f079370945aa3f7139bccd4564497e6ae4d0d16161c77747a"
+    },
+    {
+      "upstream_path": "TauCeti/Geometry/Convex/ConvexSpace/Barycenter.lean",
+      "path": "LowDimensionalTopology/External/TauCeti/Geometry/Convex/ConvexSpace/Barycenter.lean",
+      "upstream_sha256": "89ecab793f2ecef5e63a96d82cde37260c3829699b0babb1b35174db21b90452",
+      "sha256": "89ecab793f2ecef5e63a96d82cde37260c3829699b0babb1b35174db21b90452"
+    }
+  ]
+}

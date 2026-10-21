@@ -1,0 +1,41 @@
+/- Released under Apache 2.0 license as described in the file LICENSE. -/
+module
+
+public import LowDimensionalTopology.Geometry.Fuchsian.TriangleGroup.TriangleVertexReflectionGroups
+public import LowDimensionalTopology.Geometry.Hyperbolic.Reflection.NativeDihedralChambers
+@[expose] public section
+noncomputable section
+open scoped UpperHalfPlane Complex.UnitDisc
+namespace LowDimensionalTopology.Geometry.Fuchsian
+
+local instance triangleVertexChartDiscMetric : MetricSpace 𝔻 := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexChartDiscMetric
+
+alias triangleVertex_kleinDirection_unit := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_kleinDirection_unit
+
+alias triangleVertex_angle_chart_at_I := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_angle_chart_at_I
+
+local instance triangleVertexConjugationDiscMetric : MetricSpace 𝔻 := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexConjugationDiscMetric
+
+abbrev nativeDiscConjugation := _root_.LowDimensionalTopology.Geometry.Hyperbolic.nativeDiscConjugation
+
+alias nativeDiscConjugation_apply := _root_.LowDimensionalTopology.Geometry.Hyperbolic.nativeDiscConjugation_apply
+
+alias nativeDiscConjugation_orthogonal := _root_.LowDimensionalTopology.Geometry.Hyperbolic.nativeDiscConjugation_orthogonal
+
+alias triangleVertex_group_chart_at_I := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_group_chart_at_I
+
+alias triangleVertex_group_chart := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_group_chart
+
+local instance triangleVertexGeneralChartDiscMetric : MetricSpace 𝔻 := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexGeneralChartDiscMetric
+
+local instance triangleVertexGeometryDiscMetric : MetricSpace 𝔻 := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexGeometryDiscMetric
+
+alias nativeDiscConjugation_injective := _root_.LowDimensionalTopology.Geometry.Hyperbolic.nativeDiscConjugation_injective
+
+alias triangleVertex_closed_angle_ball_cover := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_closed_angle_ball_cover
+
+alias triangleVertex_closed_angle_orbit_unique := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_closed_angle_orbit_unique
+
+alias triangleVertex_closed_angle_stabilizer := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_closed_angle_stabilizer
+
+end LowDimensionalTopology.Geometry.Fuchsian

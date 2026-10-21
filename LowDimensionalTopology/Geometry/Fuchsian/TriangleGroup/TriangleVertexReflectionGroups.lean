@@ -1,0 +1,33 @@
+/- Released under Apache 2.0 license as described in the file LICENSE. -/
+module
+
+public import LowDimensionalTopology.Geometry.Hyperbolic.Isometry.Conjugacy.ConjugacyClasses
+public import LowDimensionalTopology.Geometry.Hyperbolic.Reflection.NativeDihedralReflectionGroups
+@[expose] public section
+noncomputable section
+open scoped UpperHalfPlane Complex.UnitDisc
+namespace LowDimensionalTopology.Geometry.Fuchsian
+
+local instance triangleVertexReflectionDiscMetric : MetricSpace 𝔻 := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexReflectionDiscMetric
+
+abbrev triangleVertexCayleyIsometry := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexCayleyIsometry
+
+abbrev triangleVertexOrthogonalIsometry := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexOrthogonalIsometry
+
+abbrev triangleVertexOrthogonalHom := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexOrthogonalHom
+
+alias triangleVertexTip_ne_zero := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexTip_ne_zero
+
+abbrev triangleVertexUnitDirection := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexUnitDirection
+
+alias triangleVertex_reflection_cayley := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertex_reflection_cayley
+
+alias triangleVertexUnitDirection_angle := _root_.LowDimensionalTopology.Geometry.Hyperbolic.triangleVertexUnitDirection_angle
+
+alias native_reflections_finite_at_I := _root_.LowDimensionalTopology.Geometry.Hyperbolic.native_reflections_finite_at_I
+
+alias native_ray_reflection_conjugation := _root_.LowDimensionalTopology.Geometry.Hyperbolic.native_ray_reflection_conjugation
+
+alias native_reflections_finite_of_angle := _root_.LowDimensionalTopology.Geometry.Hyperbolic.native_reflections_finite_of_angle
+
+end LowDimensionalTopology.Geometry.Fuchsian

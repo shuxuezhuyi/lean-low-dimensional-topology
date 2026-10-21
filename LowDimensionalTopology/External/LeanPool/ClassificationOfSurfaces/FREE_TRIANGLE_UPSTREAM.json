@@ -1,0 +1,407 @@
+{
+  "upstream": "https://github.com/LeanPool/lean-pool",
+  "commit": "86da5902e640ceb44e53f88c4a04f870dc062126",
+  "license": "Apache-2.0",
+  "authors": [
+    "Ryan McCorvie",
+    "Jack McCarthy"
+  ],
+  "scope": "One complete minimal module extending the existing affine mesh port: genuine triangle-face intersections, disjoint interiors and boundary-edge geometry. No prescribed shelling or pre-given Euler identity is assumed.",
+  "license_file": "LowDimensionalTopology/External/LeanPool/LICENSE",
+  "existing_dependency_manifests": [
+    "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/UPSTREAM.json",
+    "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/POLYHEDRON_UPSTREAM.json"
+  ],
+  "files": [
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle",
+      "file": "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/Moise/FreeTriangle.lean",
+      "upstream_file": "LeanPool/ClassificationOfSurfaces/Moise/FreeTriangle.lean",
+      "upstream_git_blob_sha1": "f8512c5d47f99621926137bd4e93eccad8fde37e",
+      "upstream_sha256": "fa9b828d612e5c979f01aa4bd6ee059c7cd0f9f84714957a7e74a135ffdfe1ee",
+      "local_sha256": "19624d23b153a5cb20af3cec4a2c443270405852b22ef8273aa3516fc68e043f",
+      "changes": [
+        "Project-relative LeanPool imports",
+        "All imports explicitly public"
+      ],
+      "declaration_mapping_rule": "Every public declaration retains its original global name, theorem statement and proof body; only containing module paths and imports change."
+    }
+  ],
+  "public_declaration_mapping": [
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.incidentTriangles",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.incidentTriangles",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsBoundaryEdge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsBoundaryEdge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsFreeTriangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.IsFreeTriangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.allBoundaryEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.allBoundaryEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_allBoundaryEdges_iff",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_allBoundaryEdges_iff",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.isCompact_boundaryCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.isCompact_boundaryCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_of_mem_edges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_of_mem_edges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_incidentTriangles_iff",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_incidentTriangles_iff",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_biUnion_subset",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_biUnion_subset",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleIndexEquiv",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleIndexEquiv",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleAffineBasis",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleAffineBasis",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.range_triangleAffineBasis",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.range_triangleAffineBasis",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdgeOpposite",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdgeOpposite",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdgeOpposite_card",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdgeOpposite_card",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdgeOpposite_subset",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleEdgeOpposite_subset",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.image_compl_eq_triangleEdgeOpposite",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.image_compl_eq_triangleEdgeOpposite",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_edge_of_mem_frontier_triangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_edge_of_mem_frontier_triangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_eq_zero_of_mem_oppositeEdge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_eq_zero_of_mem_oppositeEdge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_pos_of_mem_oppositeEdge_of_not_vertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_pos_of_mem_oppositeEdge_of_not_vertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_smul_eq_of_same_edge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_smul_eq_of_same_edge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_ne_zero_of_same_edge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_ne_zero_of_same_edge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.interior_triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.interior_triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.interior_triangleCarrier_nonempty",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.interior_triangleCarrier_nonempty",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.closure_interior_triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.closure_interior_triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier_convexHull_of_subset_card_le_two",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier_convexHull_of_subset_card_le_two",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier_edgeCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier_edgeCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier_triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier_triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.eq_of_interior_triangleCarrier_inter_nonempty",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.eq_of_interior_triangleCarrier_inter_nonempty",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_interior_triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.eraseTriangle_support_eq_closure_diff_triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.eraseTriangle_support_eq_closure_diff_triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_eraseTriangle_support_interior_triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.disjoint_eraseTriangle_support_interior_triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_eraseTriangle_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_eraseTriangle_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleCarrier_eq_nonnegCoords",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangleCarrier_eq_nonnegCoords",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.nonOppositeCoordNeighborhood",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.nonOppositeCoordNeighborhood",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.isOpen_nonOppositeCoordNeighborhood",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.isOpen_nonOppositeCoordNeighborhood",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_nonOppositeCoordNeighborhood_of_mem_edge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_nonOppositeCoordNeighborhood_of_mem_edge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangle_inter_eq_edge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.triangle_inter_eq_edge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_negative_across_shared_edge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.oppositeCoord_negative_across_shared_edge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeCarrier_infinite",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeCarrier_infinite",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_nonvertex_mem_edgeCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_nonvertex_mem_edgeCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edge_eq_of_nonvertex_mem_edgeCarriers",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edge_eq_of_nonvertex_mem_edgeCarriers",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeCarrier_inter_edgeCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeCarrier_inter_edgeCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertex_mem_edge_of_position_mem_edgeCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertex_mem_edge_of_position_mem_edgeCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.incidentTriangle_eq_of_ne",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.incidentTriangle_eq_of_ne",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_incidentTriangles_le_two",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_incidentTriangles_le_two",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edge_subset_of_nonvertex_mem_triangleCarrier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edge_subset_of_nonvertex_mem_triangleCarrier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_frontier_of_mem_boundaryEdge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_frontier_of_mem_boundaryEdge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdgeCarrier_subset_frontier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdgeCarrier_subset_frontier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryCarrier_subset_frontier",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryCarrier_subset_frontier",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_triangleEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_triangleEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdges_subset_triangleEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdges_subset_triangleEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_boundaryEdges_iff",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_boundaryEdges_iff",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdges_nonempty_of_isFreeTriangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.boundaryEdges_nonempty_of_isFreeTriangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_incidentTriangles_eq_two_of_not_boundary",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_incidentTriangles_eq_two_of_not_boundary",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.AreEdgeNeighbors",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.AreEdgeNeighbors",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_boundaryEdges_le_two_of_neighbor",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.card_boundaryEdges_le_two_of_neighbor",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_interior_union_triangleCarrier_of_shared_edge",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_interior_union_triangleCarrier_of_shared_edge",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_ne_of_not_mem_edgeVertices",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.orderedVertex_ne_of_not_mem_edgeVertices",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_interior_union_triangleCarrier_of_shared_edge_of_not_mem_edgeVertices",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_interior_union_triangleCarrier_of_shared_edge_of_not_mem_edgeVertices",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeCarrier_diff_vertices_subset_interior_support",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.edgeCarrier_diff_vertices_subset_interior_support",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_boundaryEdge_through_frontier_point",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_boundaryEdge_through_frontier_point",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_frontier_iff_exists_boundaryEdge_of_nonvertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.mem_frontier_iff_exists_boundaryEdge_of_nonvertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_inter_triangleCarrier_diff_vertices",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_inter_triangleCarrier_diff_vertices",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.HasNoIsolatedFrontierVertex",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.HasNoIsolatedFrontierVertex",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertex_mem_triangle_of_frontier_not_mem_boundaryEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.vertex_mem_triangle_of_frontier_not_mem_boundaryEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.hasNoIsolatedFrontierVertex_of_boundaryEdges_card_two",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.hasNoIsolatedFrontierVertex_of_boundaryEdges_card_two",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_inter_triangleCarrier_eq_boundaryEdges",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_inter_triangleCarrier_eq_boundaryEdges",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_free_triangle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_free_triangle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_infinite_of_triangles_nonempty",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.frontier_infinite_of_triangles_nonempty",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_free_triangle_of_triangles_nonempty",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.TriangleMesh.exists_free_triangle_of_triangles_nonempty",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.FreeTriangle"
+    }
+  ]
+}

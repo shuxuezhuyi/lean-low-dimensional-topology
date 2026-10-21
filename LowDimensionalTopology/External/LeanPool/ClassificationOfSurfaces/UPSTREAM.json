@@ -1,0 +1,140 @@
+{
+  "upstream": "https://github.com/LeanPool/lean-pool",
+  "commit": "86da5902e640ceb44e53f88c4a04f870dc062126",
+  "license": "Apache-2.0",
+  "authors": [
+    "Ryan McCorvie",
+    "Jack McCarthy"
+  ],
+  "scope": "Complete three-module non-Mathlib import closure of PolygonalCircle.polygonal_jordan. No external Lake package, toolchain or dependency pin is introduced.",
+  "license_file": "LowDimensionalTopology/External/LeanPool/LICENSE",
+  "files": [
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.GeometricTriangulation",
+      "file": "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/Moise/GeometricTriangulation.lean",
+      "upstream_file": "LeanPool/ClassificationOfSurfaces/Moise/GeometricTriangulation.lean",
+      "upstream_git_blob_sha1": "bd7c3c17f1d8defeeb58f8f4736babb32bcdebc9",
+      "upstream_sha256": "e05c9bbf438d250d2aa3ce883aada620ad8db538037b62af05d325f7c60e956c",
+      "local_sha256": "e05c9bbf438d250d2aa3ce883aada620ad8db538037b62af05d325f7c60e956c",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ],
+      "declaration_mapping_rule": "All public global declaration names and statements retain their upstream namespaces unchanged; only their containing module paths change."
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PlaneComplex",
+      "file": "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/Moise/PlaneComplex.lean",
+      "upstream_file": "LeanPool/ClassificationOfSurfaces/Moise/PlaneComplex.lean",
+      "upstream_git_blob_sha1": "ad13e238d90aba1bb20640227b037316027f4e64",
+      "upstream_sha256": "bfa958514570867394c60ceb4e9a8725cef015830011acd951041ce565cca437",
+      "local_sha256": "1d9f3397eb453534433bcf10f9d67ce1658062d0245862febe536063a9ffd0ea",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public"
+      ],
+      "declaration_mapping_rule": "All public global declaration names and statements retain their upstream namespaces unchanged; only their containing module paths change."
+    },
+    {
+      "module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan",
+      "file": "LowDimensionalTopology/External/LeanPool/ClassificationOfSurfaces/Moise/PolygonalJordan.lean",
+      "upstream_file": "LeanPool/ClassificationOfSurfaces/Moise/PolygonalJordan.lean",
+      "upstream_git_blob_sha1": "aad9e3114e70c0d4ca7e575dda0fda98133ba12d",
+      "upstream_sha256": "4b0fa338e505e4f7a127ef5405784ddc74fed98ed75bd95df57db07aed81fdd1",
+      "local_sha256": "bbbd21c52e4c6f633d92088621b7647eceaf7ef0a249f20c7268e549960eacd5",
+      "changes": [
+        "Project-relative module imports",
+        "All imports explicitly public",
+        "Nine ring/abel normalization calls refined to ring_nf/abel_nf to remove nonessential informational diagnostics; theorem statements and namespaces are unchanged"
+      ],
+      "declaration_mapping_rule": "All public global declaration names and statements retain their upstream namespaces unchanged; only their containing module paths change."
+    }
+  ],
+  "public_declaration_mapping": [
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.polygonal_jordan",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.polygonal_jordan",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interiorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interiorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.exteriorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.exteriorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isOpen_interiorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isOpen_interiorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isOpen_exteriorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isOpen_exteriorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.disjoint_interior_exterior",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.disjoint_interior_exterior",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_union_exterior",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.interior_union_exterior",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isConnected_interiorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isConnected_interiorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isConnected_exteriorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isConnected_exteriorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isBounded_interiorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isBounded_interiorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.not_isBounded_exteriorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.not_isBounded_exteriorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.frontier_interiorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.frontier_interiorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.frontier_exteriorRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.frontier_exteriorRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_eq_union",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.closedRegion_eq_union",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    },
+    {
+      "upstream_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isCompact_closedRegion",
+      "local_name": "LeanEval.Topology.ClassificationOfSurfaces.Moise.PolygonalCircle.isCompact_closedRegion",
+      "local_module": "LowDimensionalTopology.External.LeanPool.ClassificationOfSurfaces.Moise.PolygonalJordan"
+    }
+  ]
+}
