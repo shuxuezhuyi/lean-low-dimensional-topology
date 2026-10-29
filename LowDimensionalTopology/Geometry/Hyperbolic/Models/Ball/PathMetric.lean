@@ -2,6 +2,7 @@
 Released under Apache 2.0 license as described in the file LICENSE.
 -/
 module
+public import LowDimensionalTopology.Geometry.Hyperbolic.Models.PoincareDensity
 public import LowDimensionalTopology.Geometry.Inversive.UnitBall.Invariants
 public import LowDimensionalTopology.Geometry.Auxiliary.Analysis.DensityMetric
 /-!
@@ -31,13 +32,17 @@ theorem unitBallDomain_norm_lt (x : unitBallDomain n) : ‖x.val‖ < 1 := by
     (show x.val ∈ Metric.ball (0 : Inversive.Euclidean n) 1 from x.property)
 
 def ballDensity (n : ℕ) : Auxiliary.Analysis.Density (unitBallDomain n) where
-  toFun x := 2/(1-‖x.val‖^2)
-  continuous := by
-    apply continuous_const.div (continuous_const.sub (continuous_subtype_val.norm.pow 2))
-    intro x
-    exact (sub_pos.mpr ((sq_lt_one_iff₀ (norm_nonneg _)).mpr (unitBallDomain_norm_lt x))).ne'
-  positive x := div_pos (by norm_num)
-    (sub_pos.mpr ((sq_lt_one_iff₀ (norm_nonneg _)).mpr (unitBallDomain_norm_lt x)))
+  toFun x := poincareLengthDensity x.val
+  continuous := continuousOn_poincareLengthDensity.domRestrict
+  positive x := poincareLengthDensity_pos (unitBallDomain_norm_lt x)
+
+/-- The explicit ball density formula is retained as a public lemma. -/
+theorem ballDensity_formula (x : unitBallDomain n) :
+    ballDensity n x = 2 / (1 - ‖x.val‖ ^ 2) := rfl
+
+/-- Every real dimension uses the same scalar factor as the complex disk. -/
+theorem ballDensity_eq_poincareLengthDensity (x : unitBallDomain n) :
+    ballDensity n x = poincareLengthDensity x.val := rfl
 
 def ballExtendedHomeomorph (n : ℕ) : unitBallDomain n ≃ₜ (Inversive.extendedUnitBall : Set (Inversive.ExtendedEuclidean
   n)) :=

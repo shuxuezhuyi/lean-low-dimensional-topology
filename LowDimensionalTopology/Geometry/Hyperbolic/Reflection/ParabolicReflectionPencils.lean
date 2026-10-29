@@ -437,4 +437,47 @@ theorem realSL_parabolic_reflection_factor_right (f : Matrix.SpecialLinearGroup 
   apply L.reflection_isometry.injective
   exact congrFun (hN.2.2.symm.trans he) z
 
+/-- Three consecutive points of a genuine parabolic orbit cannot lie on one h-line. -/
+theorem realSL_parabolic_not_three_on_hLine
+    (A : Matrix.SpecialLinearGroup (Fin 2) ℝ) (hA : Mobius.MobiusParabolic (realSLMobius A))
+    (z : ℍ) (L : HalfPlaneLine) (hz : z ∈ L.carrier) (hAz : A • z ∈ L.carrier)
+    (hAAz : A • (A • z) ∈ L.carrier) : False := by
+  obtain ⟨Q, t, ht, hQ⟩ := realSLMobius_parabolic_normal_form A hA
+  obtain ⟨N, hN⟩ := Isometry.halfPlane_image_hLine (isometry_smul ℍ Q) L
+  have hstep (w : ℍ) : Q • (A • w) = hTranslationSL t • (Q • w) := by
+    have he : (Q * A * Q⁻¹) • (Q • w) = hTranslationSL t • (Q • w) := by
+      rcases hQ with he | he
+      · rw [he]
+      · rw [he, realSL_neg_smul]
+    simpa only [mul_smul, inv_smul_smul] using he
+  have h0 : Q • z ∈ N.carrier := by
+    rw [← hN]
+    exact ⟨z, hz, rfl⟩
+  have h1 : Q • (A • z) ∈ N.carrier := by
+    rw [← hN]
+    exact ⟨A • z, hAz, rfl⟩
+  have h2 : Q • (A • (A • z)) ∈ N.carrier := by
+    rw [← hN]
+    exact ⟨A • (A • z), hAAz, rfl⟩
+  rw [hstep] at h1
+  rw [hstep, hstep] at h2
+  have hre (w : ℍ) : (hTranslationSL t • w).re = w.re + t := by
+    change (((hTranslationSL t • w : ℍ) : ℂ)).re = _
+    rw [hTranslationSL_coe]
+    rfl
+  cases N with
+  | vertical c =>
+    change (Q • z).re = c at h0
+    change (hTranslationSL t • (Q • z)).re = c at h1
+    rw [hre] at h1
+    exact ht (by linarith)
+  | circle c r hr =>
+    have hs0 := norm_sub_real_eq_radius_sq h0
+    have hs1 := norm_sub_real_eq_radius_sq h1
+    have hs2 := norm_sub_real_eq_radius_sq h2
+    rw [hre, hTranslationSL_im] at hs1
+    rw [hre, hre, hTranslationSL_im, hTranslationSL_im] at hs2
+    have ht2 : t ^ 2 = 0 := by nlinarith [hs0, hs1, hs2]
+    exact ht (sq_eq_zero_iff.mp ht2)
+
 end LowDimensionalTopology.Geometry.Hyperbolic

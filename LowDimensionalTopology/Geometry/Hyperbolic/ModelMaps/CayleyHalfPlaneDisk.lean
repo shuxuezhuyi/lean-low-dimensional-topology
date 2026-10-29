@@ -3,6 +3,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 -/
 module
 
+public import LowDimensionalTopology.Geometry.Hyperbolic.Models.PoincareDensity
 public import LowDimensionalTopology.Geometry.Hyperbolic.Models.HalfPlane.CurveLength
 public import LowDimensionalTopology.Geometry.Auxiliary.Analysis.PoissonKernel
 public import Mathlib.Analysis.Complex.UnitDisc.Basic
@@ -273,7 +274,16 @@ def cayleyHomeomorph : ℍ ≃ₜ 𝔻 where
 
 /-- The disc density specified by. -/
 def discWeightedSpeed (γ : ℝ → 𝔻) (v : ℝ → ℂ) (t : ℝ) : ℝ :=
-  2 * ‖v t‖ / (1 - ‖(γ t : ℂ)‖ ^ 2)
+  poincareLengthDensity (γ t : ℂ) * ‖v t‖
+
+/-- The explicit speed formula is retained independently of the density implementation. -/
+theorem discWeightedSpeed_formula (γ : ℝ → 𝔻) (v : ℝ → ℂ) (t : ℝ) :
+    discWeightedSpeed γ v t = 2 * ‖v t‖ / (1 - ‖(γ t : ℂ)‖ ^ 2) :=
+  poincareLengthDensity_mul_norm (γ t : ℂ) (v t)
+
+/-- The curve speed uses the common Poincaré length factor. -/
+theorem discWeightedSpeed_eq_poincareLengthDensity (γ : ℝ → 𝔻) (v : ℝ → ℂ) (t : ℝ) :
+    discWeightedSpeed γ v t = poincareLengthDensity (γ t : ℂ) * ‖v t‖ := rfl
 
 /-- A C¹ piece in the actual unit disc, with one-sided endpoint derivatives. -/
 structure DiscC1CurvePiece where
@@ -311,8 +321,9 @@ def C1CurvePiece.toDisc (c : C1CurvePiece) : DiscC1CurvePiece where
 
 theorem C1CurvePiece.toDisc_speed (c : C1CurvePiece) (t : ℝ) :
     discWeightedSpeed c.toDisc.curve c.toDisc.velocity t =
-      weightedSpeed c.curve c.velocity t :=
-  cayley_weighted_tangent_norm (c.curve t) (c.velocity t)
+      weightedSpeed c.curve c.velocity t := by
+  rw [discWeightedSpeed_formula]
+  exact cayley_weighted_tangent_norm (c.curve t) (c.velocity t)
 
 theorem C1CurvePiece.toDisc_length (c : C1CurvePiece) : c.toDisc.length = c.length := by
   apply intervalIntegral.integral_congr
@@ -340,8 +351,9 @@ def DiscC1CurvePiece.toHalfPlane (c : DiscC1CurvePiece) : C1CurvePiece where
 
 theorem DiscC1CurvePiece.toHalfPlane_speed (c : DiscC1CurvePiece) (t : ℝ) :
     weightedSpeed c.toHalfPlane.curve c.toHalfPlane.velocity t =
-      discWeightedSpeed c.curve c.velocity t :=
-  inverseCayley_weighted_tangent_norm (c.curve t) (c.velocity t)
+      discWeightedSpeed c.curve c.velocity t := by
+  rw [discWeightedSpeed_formula]
+  exact inverseCayley_weighted_tangent_norm (c.curve t) (c.velocity t)
 
 theorem DiscC1CurvePiece.toHalfPlane_length (c : DiscC1CurvePiece) :
     c.toHalfPlane.length = c.length := by

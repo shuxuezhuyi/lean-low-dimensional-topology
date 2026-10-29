@@ -1,4 +1,5 @@
 module
+public import LowDimensionalTopology.Geometry.Hyperbolic.Models.PoincareDensity
 public import LowDimensionalTopology.Geometry.Hyperbolic.Models.Disc.ExtendedCarrier
 public import LowDimensionalTopology.Geometry.Auxiliary.Measure.CompatibleMeasure
 public import LowDimensionalTopology.Geometry.Surfaces.Covering.DiscUniversalDeck
@@ -16,12 +17,20 @@ open LowDimensionalTopology.Geometry.Auxiliary.Algebra LowDimensionalTopology.Ge
 
 /-- The genuine disc line element applied to a coordinate tangent vector. -/
 def discHyperbolicTangentNorm (z : Complex.UnitDisc) (v : ℂ) : ℝ :=
-  2 * ‖v‖ / (1 - ‖(z : ℂ)‖ ^ 2)
+  poincareLengthDensity (z : ℂ) * ‖v‖
+
+/-- The original coordinate formula remains available as a public lemma. -/
+theorem discHyperbolicTangentNorm_formula (z : Complex.UnitDisc) (v : ℂ) :
+    discHyperbolicTangentNorm z v = 2 * ‖v‖ / (1 - ‖(z : ℂ)‖ ^ 2) :=
+  poincareLengthDensity_mul_norm (z : ℂ) v
+
+/-- The quotient tangent norm uses the common Poincaré length density. -/
+theorem discHyperbolicTangentNorm_eq_poincareLengthDensity (z : Complex.UnitDisc) (v : ℂ) :
+    discHyperbolicTangentNorm z v = poincareLengthDensity (z : ℂ) * ‖v‖ := rfl
 
 theorem discHyperbolicTangentNorm_nonneg (z : Complex.UnitDisc) (v : ℂ) :
     0 ≤ discHyperbolicTangentNorm z v := by
-  have hz : 0 < 1 - ‖(z : ℂ)‖ ^ 2 := by nlinarith [z.norm_lt_one, norm_nonneg (z : ℂ)]
-  exact div_nonneg (by positivity) hz.le
+  exact mul_nonneg (poincareLengthDensity_pos z.norm_lt_one).le (norm_nonneg v)
 
 theorem normalizedDisc_analyticAt (a c : ℂ) (hdet : Complex.normSq a - Complex.normSq c = 1)
     (z : Complex.UnitDisc) : AnalyticAt ℂ (_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractionalMap a c) (z : ℂ) := by
@@ -37,6 +46,7 @@ theorem normalizedDisc_tangentNorm (a c : ℂ) (hdet : Complex.normSq a - Comple
   have hd := _root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractional_den_ne_zero hdet z.norm_lt_one.le
   have hn : ‖deriv (_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractionalMap a c) (z : ℂ)‖ ≠ 0 :=
     (_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractional_deriv_norm_pos hdet hd).ne'
+  simp only [discHyperbolicTangentNorm_formula]
   change 2 * ‖deriv (_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractionalMap a c) (z : ℂ) * v‖ /
     (1 - ‖_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractionalMap a c z‖ ^ 2) = 2 * ‖v‖ / (1 - ‖(z :
       ℂ)‖ ^ 2)
@@ -107,11 +117,12 @@ theorem normalizedDisc_area_density (a c : ℂ) (hdet : Complex.normSq a - Compl
     |(normalizedDiscRealFDeriv a c z).det| * _root_.LowDimensionalTopology.Geometry.Hyperbolic.discAreaDensity (_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractionalMap a c z) = _root_.LowDimensionalTopology.Geometry.Hyperbolic.discAreaDensity z := by
   rw [normalizedDiscRealFDeriv_det, abs_of_nonneg (sq_nonneg _)]
   have h := congrArg (fun x : ℝ => x ^ 2) (normalizedDisc_tangentNorm a c hdet z 1)
+  simp only [discHyperbolicTangentNorm_formula] at h
   change (2 * ‖deriv (_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractionalMap a c) (z : ℂ) * 1‖ /
       (1 - ‖_root_.LowDimensionalTopology.Geometry.Auxiliary.Analysis.discFractionalMap a c z‖ ^ 2)) ^ 2 =
     (2 * ‖(1 : ℂ)‖ / (1 - ‖(z : ℂ)‖ ^ 2)) ^ 2 at h
   simp only [norm_one, mul_one, mul_pow, div_pow] at h
-  dsimp only [_root_.LowDimensionalTopology.Geometry.Hyperbolic.discAreaDensity]
+  simp only [_root_.LowDimensionalTopology.Geometry.Hyperbolic.discAreaDensity_formula]
   convert h using 1 <;> ring
 
 /-- Actual density-weighted planar areas of arbitrary measurable disc sets are invariant
@@ -784,10 +795,9 @@ theorem discC1Piece_speed_continuousOn (p : _root_.LowDimensionalTopology.Geomet
     ContinuousOn (_root_.LowDimensionalTopology.Geometry.Hyperbolic.discWeightedSpeed p.curve p.velocity) (Icc p.a p.b) := by
   have hc : ContinuousOn (fun t => (p.curve t : ℂ)) (Icc p.a p.b) :=
     Complex.UnitDisc.continuous_coe.comp_continuousOn p.continuous_curve
-  exact (continuousOn_const.mul p.continuous_velocity.norm).div
-    (continuousOn_const.sub (hc.norm.pow 2)) (fun t _ht => by
-      have hz := (p.curve t).norm_lt_one
-      nlinarith [norm_nonneg (p.curve t : ℂ)])
+  have hρ : ContinuousOn (fun t => poincareLengthDensity (p.curve t : ℂ)) (Icc p.a p.b) :=
+    continuousOn_poincareLengthDensity.comp hc (fun t _ht => (p.curve t).property)
+  exact hρ.mul p.continuous_velocity.norm
 
 /-- Restricting a genuine C1 piece preserves its curve and one-sided derivatives. -/
 def discC1PieceRestrict (p : _root_.LowDimensionalTopology.Geometry.Hyperbolic.DiscC1CurvePiece) (a b : ℝ) (hab : a ≤ b)

@@ -1,0 +1,177 @@
+{
+  "upstream": "https://github.com/xiaodaonaoyangyang-prog/Li-Zhong-QC-formalization",
+  "commit": "1c0d5473c020b66ed5106331a38a61536760b9b2",
+  "copyright": "Copyright 2026 Wu Xiaobin",
+  "author_evidence": "QC package README.md:948. No invented per-file author claim.",
+  "license": "Apache-2.0",
+  "license_source": "LICENSE",
+  "license_source_sha256": "d9e349d50a0c9ea3180c61c7a1c7db9d71d9b0e2295e3a804daf97397888e80d",
+  "readme_source_sha256": "07cb990714dba815fb02afab535965ab4634d95e1a21e6ad51aa475112756f76",
+  "native_reason": "Actual Bers complex manifold and proper holomorphic family, supporting native complex-coordinate interfaces. No native quotient-topology equality claimed merely by set transport.",
+  "files": [
+    {
+      "module": "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34Final",
+      "file": "LowDimensionalTopology/External/LiZhongQC/Lemmas/S34Final.lean",
+      "archive_file": "LiZhongQC/Lemmas/S34Final.lean",
+      "archive_sha256": "e09722cedd665b855a5cd9a4f84eefebf9eb53af088ab23e29d2764016658014",
+      "local_sha256": "38ecdd0cf24d0314181145218e7fdd4e5bbb9bb19ccde22e7a44f6d2529c62c2",
+      "archive_bytes": 10856,
+      "local_bytes": 11114,
+      "original_direct_imports": [
+        "LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LiZhongQC.Lemmas.S34mManifold",
+        "LiZhongQC.Lemmas.S34fFibre",
+        "LiZhongQC.Lemmas.S34fProper"
+      ],
+      "local_direct_imports": [
+        "LowDimensionalTopology.External.LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mManifold",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34fFibre",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34fProper"
+      ],
+      "changes": [
+        "Add module, exposed public section and explicit source elaboration options matching selected QC library",
+        "Make imports public and prefix only LiZhongQC modules; original mathematical body/comments/literals unchanged"
+      ],
+      "mathematical_body_sha256": "96e66c0bf1edad6f79882889b2cd0867137f6ed727615598dc91e15944f60eae",
+      "mathematical_body_tokens_preserved": true,
+      "compatibility_adaptations": []
+    },
+    {
+      "module": "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mCore",
+      "file": "LowDimensionalTopology/External/LiZhongQC/Lemmas/S34mCore.lean",
+      "archive_file": "LiZhongQC/Lemmas/S34mCore.lean",
+      "archive_sha256": "5ef785c634c8f0b5d526c874b380e0965c2c7c077fb1e04d9ef2022d43f936f7",
+      "local_sha256": "9e79df95b14a9ff80f95e10b82d321e009bb005faf026a4884799ff17045e53f",
+      "archive_bytes": 118137,
+      "local_bytes": 118317,
+      "original_direct_imports": [
+        "LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LiZhongQC.Lemmas.S34mOsgood"
+      ],
+      "local_direct_imports": [
+        "LowDimensionalTopology.External.LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mOsgood"
+      ],
+      "changes": [
+        "Add module, exposed public section and explicit source elaboration options matching selected QC library",
+        "Make imports public and prefix only LiZhongQC modules; original mathematical body/comments/literals unchanged"
+      ],
+      "mathematical_body_sha256": "1e043637339069176ebcf9bea57be7fb35995dc47c572cee25469c20e2521cbc",
+      "mathematical_body_tokens_preserved": true,
+      "compatibility_adaptations": []
+    },
+    {
+      "module": "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mManifold",
+      "file": "LowDimensionalTopology/External/LiZhongQC/Lemmas/S34mManifold.lean",
+      "archive_file": "LiZhongQC/Lemmas/S34mManifold.lean",
+      "archive_sha256": "8df890e03dddf12b7d14409671b4d73b406d332959a4c33058895719921a427a",
+      "local_sha256": "c4b908e36c5838870fbe81a06b444501ac8af54ad6f6de08428310f515fc5ed7",
+      "archive_bytes": 31730,
+      "local_bytes": 31910,
+      "original_direct_imports": [
+        "LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LiZhongQC.Lemmas.S34mCore"
+      ],
+      "local_direct_imports": [
+        "LowDimensionalTopology.External.LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mCore"
+      ],
+      "changes": [
+        "Add module, exposed public section and explicit source elaboration options matching selected QC library",
+        "Make imports public and prefix only LiZhongQC modules; original mathematical body/comments/literals unchanged"
+      ],
+      "mathematical_body_sha256": "3a5cda326ffa5140b037e8ee8109bd58d2fccd43ed059ea17e643a1ac2426f4c",
+      "mathematical_body_tokens_preserved": true,
+      "compatibility_adaptations": []
+    },
+    {
+      "module": "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mOsgood",
+      "file": "LowDimensionalTopology/External/LiZhongQC/Lemmas/S34mOsgood.lean",
+      "archive_file": "LiZhongQC/Lemmas/S34mOsgood.lean",
+      "archive_sha256": "f3cc70db45ec20a5c9aba880d11a6a1c24674c921e3462e4c24b30390460e9db",
+      "local_sha256": "d3853afe6d048ab40df534a607400882bd5c448f16773c2ec6b371999560bf1e",
+      "archive_bytes": 16952,
+      "local_bytes": 17061,
+      "original_direct_imports": [
+        "Mathlib"
+      ],
+      "local_direct_imports": [
+        "Mathlib"
+      ],
+      "changes": [
+        "Add module, exposed public section and explicit source elaboration options matching selected QC library",
+        "Make imports public and prefix only LiZhongQC modules; original mathematical body/comments/literals unchanged"
+      ],
+      "mathematical_body_sha256": "665ebf3c2ecc3ee415fd618cb431bd7a07b32396f8ae5a970403447b9646240b",
+      "mathematical_body_tokens_preserved": true,
+      "compatibility_adaptations": []
+    },
+    {
+      "module": "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34fFibre",
+      "file": "LowDimensionalTopology/External/LiZhongQC/Lemmas/S34fFibre.lean",
+      "archive_file": "LiZhongQC/Lemmas/S34fFibre.lean",
+      "archive_sha256": "00f23b1adc1399bbc419eecbe652e0bbcf37d72f1d636efa10949e4abf0e0caf",
+      "local_sha256": "8b8724d032949823e22c0662a0358b3c7923a0c14538783ad857f44459085157",
+      "archive_bytes": 34651,
+      "local_bytes": 34899,
+      "original_direct_imports": [
+        "LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LiZhongQC.Lemmas.UniformizedUniqueness",
+        "LiZhongQC.Lemmas.S34mCore",
+        "LiZhongQC.Lemmas.S34mManifold"
+      ],
+      "local_direct_imports": [
+        "LowDimensionalTopology.External.LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.UniformizedUniqueness",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mCore",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mManifold"
+      ],
+      "changes": [
+        "Add module, exposed public section and explicit source elaboration options matching selected QC library",
+        "Make imports public and prefix only LiZhongQC modules; original mathematical body/comments/literals unchanged"
+      ],
+      "mathematical_body_tokens_preserved": false,
+      "compatibility_adaptations": [
+        "Joint20 actual unusedSectionVars79: give the existing T2Space instance a local name and explicitly include it only in s34f_sheet; retain the original typeclass premise.",
+        "Joint20 actual haveILetI158/274/278: use have/let for local CompactSpace, TopologicalSpace and ChartedSpace instances in a theorem proof as prescribed by the current style linter.",
+        "Joint20 actual deprecated435: use public continuousOn_iff_continuous_domRestrict; keep the same restricted map and continuity goal.",
+        "Joint20 actual unnecessarySimpa498/499: let simp close the two coordinate differentiability goals.",
+        "Joint20 actual unusedVariables578/579: explicitly reference existing hinj/hopen hypotheses with anonymous local proofs, preserving the public binder names and mathematical statement.",
+        "Joint21 actual unusedSectionVars80: replace automatically included s34f_sheet section variables with an explicit theorem telescope in the same TopologicalSpace, ChartedSpace, T2Space, IsManifold order, explicitly referencing the named T2Space proof. All original typeclass premises, user binders and the mathematical conclusion remain. Scoped include alone did not remove the actual diagnostic."
+      ],
+      "initial_import_only_mathematical_body_sha256": "8a5a0cd6f3f0d5d4f45c927bc4025373d3c899e8aa5584be8c3200ff96f0db83",
+      "mathematical_statements_and_public_binder_names_preserved": true
+    },
+    {
+      "module": "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34fProper",
+      "file": "LowDimensionalTopology/External/LiZhongQC/Lemmas/S34fProper.lean",
+      "archive_file": "LiZhongQC/Lemmas/S34fProper.lean",
+      "archive_sha256": "b04fcbce2e89366a9992804e5dd8d87a88a4a38c3f9eab8f4f2ca4764f474cc2",
+      "local_sha256": "053aef7ee0db3637751951ded6205e4598dd019b1f665c9ac62c7d6fbc3ad51b",
+      "archive_bytes": 19080,
+      "local_bytes": 19260,
+      "original_direct_imports": [
+        "LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LiZhongQC.Lemmas.S34mManifold"
+      ],
+      "local_direct_imports": [
+        "LowDimensionalTopology.External.LiZhongQC.Ch10.S34_BersFiberSpace",
+        "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34mManifold"
+      ],
+      "changes": [
+        "Add module, exposed public section and explicit source elaboration options matching selected QC library",
+        "Make imports public and prefix only LiZhongQC modules; original mathematical body/comments/literals unchanged"
+      ],
+      "mathematical_body_sha256": "4f67a056aab9fca01c84367042831aaaa39907501775582a0d2fb34cc01670ae",
+      "mathematical_body_tokens_preserved": true,
+      "compatibility_adaptations": []
+    }
+  ],
+  "validation": "Selected endpoint closures passed strict current-checkout compilation: S33, HurwitzProofChain and HurwitzTheorem in joint21; S34fFibre, S34Final and UniformizedTeichmuller in joint22. The latter full scoped batch failed only in native integration modules. These are module-level results; the whole-project build and all-owned transitive axiom audit remain pending.",
+  "schema_version": 1,
+  "selected_new_module_count": 6,
+  "targets": [
+    "LowDimensionalTopology.External.LiZhongQC.Lemmas.S34Final"
+  ]
+}

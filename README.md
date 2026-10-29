@@ -16,9 +16,10 @@
 | [DiscreteGroups](LowDimensionalTopology/Geometry/DiscreteGroups) | 离散作用、轨道与基本域 |
 | [Fuchsian](LowDimensionalTopology/Geometry/Fuchsian) | Fuchsian 群、商空间与群的几何 |
 | [Polygon](LowDimensionalTopology/Geometry/Polygon) | 多边形、边配对与拼合 |
-| [Surfaces](LowDimensionalTopology/Geometry/Surfaces) | 曲面、覆盖、Riemann 曲面与一致化 |
+| [Surfaces](LowDimensionalTopology/Geometry/Surfaces) | 曲面、覆盖、闭 Riemann 曲面与一致化 |
+| [Teichmuller](LowDimensionalTopology/Geometry/Teichmuller) | 标记商、Teichmüller 空间、Fenchel–Nielsen 坐标与 Weil–Petersson 几何 |
 
-开发中使用了
+项目约定见 [AGENTS.md](AGENTS.md)。开发中使用了
 [Archon](https://github.com/frenzymath/Archon) 的 Lean 指引和诊断工具。
 新写及移入的 Lean 文件统一采用 `module`、显式 `public import` 和 `public section`。
 移入外部代码保留原作者、版权、许可及准确上游，见[第三方致谢](THIRD_PARTY_NOTICES.md)。
@@ -28,6 +29,8 @@
 <!-- reference-acknowledgment:start -->
 Alan F. Beardon, *The Geometry of Discrete Groups*, Graduate Texts in Mathematics 91,
 Springer, 1983. DOI: 10.1007/978-1-4612-1146-4.
+
+Y. Imayoshi and M. Taniguchi, *An Introduction to Teichmüller Spaces*, Springer, 1992.
 <!-- reference-acknowledgment:end -->
 
 ## 许可证

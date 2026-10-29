@@ -1,0 +1,1290 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/TauCetiProject/TauCeti",
+  "commit": "1f9b4414105d86e487a4ac4c3d3397076a44d0d2",
+  "license": "Apache-2.0",
+  "existing_complete_license": "LowDimensionalTopology/External/TauCeti/LICENSE",
+  "license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+  "upstream_lean": "leanprover/lean4:v4.35.0",
+  "upstream_mathlib": "074063781836922cb02701cd12943c9f51731afa",
+  "current_mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "project_pins_modified": false,
+  "selected_new_module_count": 46,
+  "reused_existing_module_count": 7,
+  "targets": [
+    "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Presentation.Basic",
+    "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.WedgeSum"
+  ],
+  "files": [
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Presentation.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Presentation/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Presentation.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Presentation/Basic.lean",
+      "upstream_sha256": "f068176a7e670287bdff5c143d1fc8f75663bed24e3b8c7386c7cbe639e879af",
+      "upstream_git_blob_sha1": "91abfb014448f23755c45938a96e43d716c0cf30",
+      "local_sha256": "bc4097555db11a6441ed86b54523649962844f75f0f7b2a984a2eabba256e0c9",
+      "byte_count": 16342,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+        },
+        {
+          "before": "import TauCeti.Topology.Connected.PathConnected",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Connected.PathConnected"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.WedgeSum",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/WedgeSum.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.WedgeSum",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/WedgeSum.lean",
+      "upstream_sha256": "6103cfae715ec2dd7cfdeef0ebdc4021d781471bfa03c58fec5183bdfa7deb8e",
+      "upstream_git_blob_sha1": "814ffa9f8ca9acf7f85db26036374ee34b45e49d",
+      "local_sha256": "8e2218e9b54976925c6bd7bf5ea8a9053117636c27ef39b2a8a6c7b2588c3d83",
+      "byte_count": 16266,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Circle.FundamentalGroup",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Circle.FundamentalGroup"
+        },
+        {
+          "before": "public import TauCeti.GroupTheory.CoprodI",
+          "after": "public import LowDimensionalTopology.External.TauCeti.GroupTheory.CoprodI"
+        },
+        {
+          "before": "public import TauCeti.Topology.WedgeSum",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.WedgeSum"
+        },
+        {
+          "before": "public import TauCeti.Topology.Circle.Punctured",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Circle.Punctured"
+        },
+        {
+          "before": "import TauCeti.AlgebraicTopology.FundamentalGroup.HomotopyEquiv",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.HomotopyEquiv"
+        },
+        {
+          "before": "import TauCeti.Topology.Homotopy.HomotopyEquiv",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyEquiv"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.HomotopyEquiv",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/HomotopyEquiv.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.HomotopyEquiv",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/HomotopyEquiv.lean",
+      "upstream_sha256": "35261fccec5c80d68f224110d4c79142a069e5ceafa1a2f38a096dda981cdeeb",
+      "upstream_git_blob_sha1": "eaacf931f774b270e768b44b49255b08e6148081",
+      "local_sha256": "8dbc64351df9b66cb2694cfa6ec974665585698fccbe1cebf898d9e0901bd91e",
+      "byte_count": 7645,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.HomotopyEquiv"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.VanKampen.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/VanKampen/Basic.lean",
+      "upstream_sha256": "3b857e315a20f3da932d0f1029b38b14eb7759cf080e8438accd4d7194fd80cd",
+      "upstream_git_blob_sha1": "0774fdeb76ce2040a6a26190a83fa5e31069da63",
+      "local_sha256": "a5fcf8b542dc20d4bf09c359e44bff75935cc024896ac9b1838dcb74dd900d9f",
+      "byte_count": 45848,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.Basic"
+        },
+        {
+          "before": "import TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration"
+        },
+        {
+          "before": "import TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout"
+        },
+        {
+          "before": "import TauCeti.CategoryTheory.Groupoid.SingleObj",
+          "after": "public import LowDimensionalTopology.External.TauCeti.CategoryTheory.Groupoid.SingleObj"
+        },
+        {
+          "before": "import TauCeti.Topology.Connected.PathConnected",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Connected.PathConnected"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Circle.FundamentalGroup",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Circle.FundamentalGroup",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Circle/FundamentalGroup.lean",
+      "upstream_sha256": "0b33d49b8e0e97fa06ecf79dee6a254127beef8c521209c387eb8ca36a7f1a33",
+      "upstream_git_blob_sha1": "98d9b3aedc87c472d3c3252a597a73950d3b794d",
+      "local_sha256": "8db923a42e9b6a2c0cd3266c69662aa231b9aba67f09dd2da687810f99f398b2",
+      "byte_count": 26296,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "import TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange"
+        },
+        {
+          "before": "import TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.Basic"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.AddCircle",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.AddCircle"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.FundamentalGroup.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.FundamentalGroup.Basic"
+        },
+        {
+          "before": "public import TauCeti.Topology.Circle.AddCircle",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Circle.AddCircle"
+        },
+        {
+          "before": "public import TauCeti.Topology.Circle.Degree",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Circle.Degree"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.GroupTheory.CoprodI",
+      "upstream_path": "TauCeti/GroupTheory/CoprodI.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.GroupTheory.CoprodI",
+      "file": "LowDimensionalTopology/External/TauCeti/GroupTheory/CoprodI.lean",
+      "upstream_sha256": "689efda3d7055dd505d97d8446b0c5246e725b8a76da7ffc98cf0c1dde038b78",
+      "upstream_git_blob_sha1": "9516b53b2156294e0469b779a638c9c107ee3c0e",
+      "local_sha256": "689efda3d7055dd505d97d8446b0c5246e725b8a76da7ffc98cf0c1dde038b78",
+      "byte_count": 1884,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Circle.Punctured",
+      "upstream_path": "TauCeti/Topology/Circle/Punctured.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Circle.Punctured",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Circle/Punctured.lean",
+      "upstream_sha256": "dea7cab6f5a28fb3f594daf17e1737b22cbd19a5a0a074f39f5a0293c9f28a93",
+      "upstream_git_blob_sha1": "05715539720bbfdce2f28cef4afe71396071a055",
+      "local_sha256": "464e515dae082f166b25e81ba49c93ae0dcac85c17b80376d971e1b08a2f7672",
+      "byte_count": 4774,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Analysis.Normed.Module.Normalize",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Analysis.Normed.Module.Normalize"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Connected.PathConnected",
+      "upstream_path": "TauCeti/Topology/Connected/PathConnected.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Connected.PathConnected",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Connected/PathConnected.lean",
+      "upstream_sha256": "38279336cc6e80b6821148887234b27dd2f72cbe3e35a0c2bfdbfbfa28b2a9e2",
+      "upstream_git_blob_sha1": "87168273d3695c1e3c58912e5d0cd6eb2ab91436",
+      "local_sha256": "38279336cc6e80b6821148887234b27dd2f72cbe3e35a0c2bfdbfbfa28b2a9e2",
+      "byte_count": 1523,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.HomotopyEquiv",
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyEquiv.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyEquiv",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/HomotopyEquiv.lean",
+      "upstream_sha256": "1e0916254310fdb08450d4321db7a32fd48666039c30d6478f2ee5b94d60376d",
+      "upstream_git_blob_sha1": "c30dcf05db76cc044ed5e552935e52e963ab2a12",
+      "local_sha256": "1e0916254310fdb08450d4321db7a32fd48666039c30d6478f2ee5b94d60376d",
+      "byte_count": 2037,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.WedgeSum",
+      "upstream_path": "TauCeti/Topology/WedgeSum.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.WedgeSum",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/WedgeSum.lean",
+      "upstream_sha256": "fb2d97f6c2ead8cdfcaa9cf285983fb3977fdd15f5ec32253b89acf965cf4e30",
+      "upstream_git_blob_sha1": "cf9647efe94aa8e5855831ecbdac6c7adf68521b",
+      "local_sha256": "fb2d97f6c2ead8cdfcaa9cf285983fb3977fdd15f5ec32253b89acf965cf4e30",
+      "byte_count": 14776,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.BasepointChange",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/BasepointChange.lean",
+      "upstream_sha256": "72230d9eaee3fc519cbba54bf3ceba3906a0791b78f3e0c29eda949ff9f46f75",
+      "upstream_git_blob_sha1": "04b42313c429b2f5bae2056ef28c415002b9e506",
+      "local_sha256": "bb63bc9e235e14a5ecea5705ebfb0c2c7e296a281229ac5471b41b9806fd8dec",
+      "byte_count": 24261,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Algebra.Group.Conj",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Algebra.Group.Conj"
+        },
+        {
+          "before": "public import TauCeti.Algebra.Group.NormalizerQuotient.Conjugation",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Algebra.Group.NormalizerQuotient.Conjugation"
+        },
+        {
+          "before": "import Mathlib.Tactic.Group",
+          "after": "public import Mathlib.Tactic.Group"
+        },
+        {
+          "before": "import TauCeti.Topology.Homotopy.Path",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.Path"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/Basic.lean",
+      "upstream_sha256": "b1ce0426acca11ca316021ff66e060abfa1581682104ec6355adc53bc4f17c44",
+      "upstream_git_blob_sha1": "f943bd7e0a132718c7a2116a04ebc556bfb58281",
+      "local_sha256": "01637fa72b73a3bc8920e0885f8cb197e36c628fb923f039ca6d81b9b7f2f926",
+      "byte_count": 7890,
+      "authors": "Kim Morrison",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: Kim Morrison",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path",
+        "Add an explicit implicit basepoint variable {a₀ : A}, matching the original auto-bound implicit parameter under the project autoImplicit=false setting; theorem statements retain the same mathematical quantifiers and all proof bodies are unchanged"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": false,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic"
+        }
+      ],
+      "exact_source_bytes_preserved_after_reversing_all_recorded_local_changes": true,
+      "binder_changes": [
+        {
+          "before": "variable {A : Type*} [TopologicalSpace A]\n",
+          "after": "variable {A : Type*} [TopologicalSpace A]\nvariable {a₀ : A}\n",
+          "reason": "The fixed upstream file relied on autoImplicit for a₀; the project deliberately disables autoImplicit."
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.CoverGeneration",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/CoverGeneration.lean",
+      "upstream_sha256": "3573e8ad0e979175b061e56488a6c69d2c719cb1e5767f74925457ec9b351ebb",
+      "upstream_git_blob_sha1": "aebe58f53ed7d3ec82c02a44f88e2c838eef0c66",
+      "local_sha256": "54c9b0f0784518f0c7a375c61183aab9150ded36a99be7c697fbbea12c8f178f",
+      "byte_count": 11615,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroup.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.Basic"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+        },
+        {
+          "before": "import TauCeti.Topology.Homotopy.Path",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.Path"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroup/Homeomorph.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroup.Homeomorph",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroup/Homeomorph.lean",
+      "upstream_sha256": "baa8a4494675255e0c1aff0c1b463e1deb90ace02e63801fd2cbf5822091a639",
+      "upstream_git_blob_sha1": "9829d94d947b8ed864a8f8f0e1ed68730b9cd464",
+      "local_sha256": "baa8a4494675255e0c1aff0c1b463e1deb90ace02e63801fd2cbf5822091a639",
+      "byte_count": 7801,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Pushout",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroupoid/Pushout.lean",
+      "upstream_sha256": "c02e1384d24a5593b1ff4640d172f3df4130cb76c2cfde4730841b3971882375",
+      "upstream_git_blob_sha1": "8a2fdda7d9d9483b398435a942d2439d84f8b6c6",
+      "local_sha256": "2f702a0af9deb33f80ed8fd992b1b5409b2033d025cd4c8b4cf1aecf19450b0b",
+      "byte_count": 25822,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue"
+        },
+        {
+          "before": "import TauCeti.CategoryTheory.InducedCategory",
+          "after": "public import LowDimensionalTopology.External.TauCeti.CategoryTheory.InducedCategory"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.AddCircle",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/AddCircle.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.AddCircle",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/AddCircle.lean",
+      "upstream_sha256": "a7a907d9cee83a646f758fff2bea51d4829bc6313b19045f334207926f4acd38",
+      "upstream_git_blob_sha1": "cde1dce3e52ed306832b34f78f8dc95eb92848ec",
+      "local_sha256": "1eee2bbbca46f960291273e67994fa6ad627938808b71f3a95ff9bd58aa5e6ec",
+      "byte_count": 9075,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Algebra.Group.ZMultiples",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Algebra.Group.ZMultiples"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Regular.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Regular.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.FundamentalGroup.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/FundamentalGroup/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.FundamentalGroup.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/FundamentalGroup/Basic.lean",
+      "upstream_sha256": "4d86ae42114d2000c341c8d21e9ee730ae3e307850b18df3e4c9996b816a8e61",
+      "upstream_git_blob_sha1": "85ae5cf555b1dee8c7a4c4b6db62a254b475d612",
+      "local_sha256": "9a9f95935f786b16dc088615654a1ccc1ba89b5574ab220ce8fb11ea982da483",
+      "byte_count": 10494,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Algebra.Group.MulOpposite",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Algebra.Group.MulOpposite"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Covering",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Covering"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.CategoryTheory.Groupoid.SingleObj",
+      "upstream_path": "TauCeti/CategoryTheory/Groupoid/SingleObj.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.CategoryTheory.Groupoid.SingleObj",
+      "file": "LowDimensionalTopology/External/TauCeti/CategoryTheory/Groupoid/SingleObj.lean",
+      "upstream_sha256": "32b7be2f9c1e1f5a7c2d089f6ea959f4aaa626655f82fa0f99a5c79a2259a588",
+      "upstream_git_blob_sha1": "029943dba91812a1d9a4c38ecca5d8985ca470c1",
+      "local_sha256": "32b7be2f9c1e1f5a7c2d089f6ea959f4aaa626655f82fa0f99a5c79a2259a588",
+      "byte_count": 7430,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Circle.AddCircle",
+      "upstream_path": "TauCeti/Topology/Circle/AddCircle.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Circle.AddCircle",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Circle/AddCircle.lean",
+      "upstream_sha256": "ec3ad53224fcd367cbf8e50dac1490fd5219023d6e156a848c4357f2e2a969a8",
+      "upstream_git_blob_sha1": "c48172e0d8bc82d5f2ade5d16d7868daec9feef5",
+      "local_sha256": "ec3ad53224fcd367cbf8e50dac1490fd5219023d6e156a848c4357f2e2a969a8",
+      "byte_count": 1122,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Circle.Degree",
+      "upstream_path": "TauCeti/Topology/Circle/Degree.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Circle.Degree",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Circle/Degree.lean",
+      "upstream_sha256": "3d666c71ce0d4f148f6d30dffe5c5edb2e1476442c1f0bfeb06a7f78a78b0852",
+      "upstream_git_blob_sha1": "e2bd5120c2d2c3ad93f1a888f705da8dbc744f75",
+      "local_sha256": "3d666c71ce0d4f148f6d30dffe5c5edb2e1476442c1f0bfeb06a7f78a78b0852",
+      "byte_count": 12992,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.HomotopyEquiv",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/HomotopyGroup/HomotopyEquiv.lean",
+      "upstream_sha256": "67c5327483ff3d954e39e1e8faf622cf35798e175229837f14edde1b01d46300",
+      "upstream_git_blob_sha1": "e0a6570d99a123027bfc6d135f81393165e576f3",
+      "local_sha256": "f38e7aab795a825a2f7a889b11bf524806928224fad084eb5364cd80cbb09b4b",
+      "byte_count": 13444,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Topology.Homotopy.HomotopyEquiv",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyEquiv"
+        },
+        {
+          "before": "public import TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange"
+        },
+        {
+          "before": "public import TauCeti.Topology.Homotopy.HomotopyGroup.Map",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.Map"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.Algebra.Group.Conj",
+      "upstream_path": "TauCeti/Algebra/Group/Conj.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Algebra.Group.Conj",
+      "file": "LowDimensionalTopology/External/TauCeti/Algebra/Group/Conj.lean",
+      "upstream_sha256": "6daa95693a61e40dfeb67b23316547d973361d3ffb57414116ce10e388e9c9f5",
+      "upstream_git_blob_sha1": "39f42c5511646474bb4f2f16d0cf1d6b61f0e1e1",
+      "local_sha256": "6daa95693a61e40dfeb67b23316547d973361d3ffb57414116ce10e388e9c9f5",
+      "byte_count": 31425,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Algebra.Group.MulOpposite",
+      "upstream_path": "TauCeti/Algebra/Group/MulOpposite.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Algebra.Group.MulOpposite",
+      "file": "LowDimensionalTopology/External/TauCeti/Algebra/Group/MulOpposite.lean",
+      "upstream_sha256": "591e655012be44a3a78c2ac959a234f70b94020b143fd31e1975f60f5308be6a",
+      "upstream_git_blob_sha1": "854fc46f28135174ed9bed1767f9e4823c3908e7",
+      "local_sha256": "591e655012be44a3a78c2ac959a234f70b94020b143fd31e1975f60f5308be6a",
+      "byte_count": 1739,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Algebra.Group.NormalizerQuotient.Conjugation",
+      "upstream_path": "TauCeti/Algebra/Group/NormalizerQuotient/Conjugation.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Algebra.Group.NormalizerQuotient.Conjugation",
+      "file": "LowDimensionalTopology/External/TauCeti/Algebra/Group/NormalizerQuotient/Conjugation.lean",
+      "upstream_sha256": "bc26b5fc5b5beda5bf921d62513e0b5997471625b5b322f85192cabad07a90d5",
+      "upstream_git_blob_sha1": "1b4323014f6a88d6e10052ee0124b5395dedd9a9",
+      "local_sha256": "5c9a15d02dd6777337ca9f5115bceeb90e7b317016c98b7f423787824a2f70d9",
+      "byte_count": 9037,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Algebra.Group.NormalizerQuotient.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Algebra.Group.NormalizerQuotient.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.Algebra.Group.ZMultiples",
+      "upstream_path": "TauCeti/Algebra/Group/ZMultiples.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Algebra.Group.ZMultiples",
+      "file": "LowDimensionalTopology/External/TauCeti/Algebra/Group/ZMultiples.lean",
+      "upstream_sha256": "161070c7aa4b5f0d60e2f80b78422c607419c64dcbafb7e4cf927108149bb969",
+      "upstream_git_blob_sha1": "3e3b3266eb903977d1d38ad10b3a1de266b6c120",
+      "local_sha256": "161070c7aa4b5f0d60e2f80b78422c607419c64dcbafb7e4cf927108149bb969",
+      "byte_count": 2110,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/BasepointSet.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.BasepointSet",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroupoid/BasepointSet.lean",
+      "upstream_sha256": "a1042c00f42a45b5025582a4abafe90155b6b8c3ddb115fb153cccf8e72d1aa4",
+      "upstream_git_blob_sha1": "60ca855450a53026f211d28a33bd990b2e8e1c66",
+      "local_sha256": "c46d868d6cc1729e0da6f0f083aef7ecd6985ea06e348509612aaea929a9d960",
+      "byte_count": 4597,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroupoid/Basic.lean",
+      "upstream_sha256": "a7c374ebcedec81525d79762fa740816479d32cafa248f0aaf06b03ebfdb7a36",
+      "upstream_git_blob_sha1": "11bef287d8ea09405b12cf60b3a5a280533483a6",
+      "local_sha256": "a7c374ebcedec81525d79762fa740816479d32cafa248f0aaf06b03ebfdb7a36",
+      "byte_count": 3217,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroupoid/CoverGeneration.lean",
+      "upstream_sha256": "fbd4789541e42df8d8b7a9b9062597a6d53d3e8961c3f2d00d6dcb65e13eaf08",
+      "upstream_git_blob_sha1": "dd2c78a396d51221871d8b1b8705fb5288eeae2c",
+      "local_sha256": "788974e189e3fba34fd4410b32e61d83e755415c78c39af6a7d7af2518105ca1",
+      "byte_count": 8181,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic"
+        },
+        {
+          "before": "public import TauCeti.Topology.Homotopy.Path",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.Path"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "upstream_path": "TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Glue",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/FundamentalGroupoid/Glue.lean",
+      "upstream_sha256": "1243bb4aa7d6f8f41a2e2ff008597ff68a57a437e037e4675c100be8335157dc",
+      "upstream_git_blob_sha1": "bb2facfc6858121211b3256e875dd438337a5d7a",
+      "local_sha256": "b7f22371f963859cee44f249b46eba87bde1acb1393aa28cc209074ec9aad6ec",
+      "byte_count": 39878,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.CoverGeneration"
+        },
+        {
+          "before": "public import TauCeti.Topology.MetricSpace.Lebesgue",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.MetricSpace.Lebesgue"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Basic.lean",
+      "upstream_sha256": "18d67b89111169f3257e9df58569d932ff19054876b57d34c3d4a6e4e1d9f27f",
+      "upstream_git_blob_sha1": "4bd4cb4a2da53e06e1199d75801e4a5576f4290e",
+      "local_sha256": "76f6e64527e5a2bc8c143b4a17b113ed7915dffc0b3584c610c6aecdaed4dc0c",
+      "byte_count": 3616,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Logic.Function.Fiber",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Logic.Function.Fiber"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Covering",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Quotient/Covering.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Covering",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Quotient/Covering.lean",
+      "upstream_sha256": "91ed0ea5522d0bf83d028c90427d021fc97e3a51712b14c9b399e8e2aef3918f",
+      "upstream_git_blob_sha1": "3739fec8504446ac2302c9ae7708435921260fd0",
+      "local_sha256": "23dfee620102ef204754b1527a923befa1871a0dae75c4e8eb6adf9541b01f21",
+      "byte_count": 3864,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.ActingGroup",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.ActingGroup"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Basic"
+        },
+        {
+          "before": "public import TauCeti.Topology.Covering.Quotient",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Covering.Quotient"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Regular.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Regular/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Regular.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Regular/Basic.lean",
+      "upstream_sha256": "ac87b1d71186950d331deceb94e87260542338ba55d12acf267f5d3a2146ae51",
+      "upstream_git_blob_sha1": "5a261bd1a949f2d880e3085207ce86ca7647a405",
+      "local_sha256": "bccabb67a283befabc3100235edd5ed3976e7857a50b2983c64b2948ce667563",
+      "byte_count": 9330,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Connected.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Connected.Basic"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Transport",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Transport"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.CategoryTheory.InducedCategory",
+      "upstream_path": "TauCeti/CategoryTheory/InducedCategory.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.CategoryTheory.InducedCategory",
+      "file": "LowDimensionalTopology/External/TauCeti/CategoryTheory/InducedCategory.lean",
+      "upstream_sha256": "2559635e9e28d5ada760273a4db2fbb17a0bbc2c85319d88ea1e6cd244afd0c2",
+      "upstream_git_blob_sha1": "0e246072a4246246f4a39f325a60f1ac94481acb",
+      "local_sha256": "2559635e9e28d5ada760273a4db2fbb17a0bbc2c85319d88ea1e6cd244afd0c2",
+      "byte_count": 3536,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange",
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.BasepointChange",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/HomotopyGroup/BasepointChange.lean",
+      "upstream_sha256": "7c1fdd41e2e3628896ebcd8eaf6c3dae751503cbee23a46515ce6348b7e5d68d",
+      "upstream_git_blob_sha1": "5efad9eefb1294ad62cd127344274a383b59d0e6",
+      "local_sha256": "7f79821c427fc3bd592974f034d77bb1ced9ea5ba2ff6f4c4b01694d1b674965",
+      "byte_count": 24491,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Topology.Homotopy.HomotopyGroup.Collar",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.Collar"
+        },
+        {
+          "before": "public import TauCeti.Topology.Homotopy.HomotopyGroup.Map",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.Map"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.HomotopyGroup.Map",
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/Map.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.Map",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/HomotopyGroup/Map.lean",
+      "upstream_sha256": "5552a562a9ce631a40765552416aca4166553fc858adc5a864ce3bb57c3febaf",
+      "upstream_git_blob_sha1": "0ad8dfc5a18c983c36528f0b1e3135b038971bd5",
+      "local_sha256": "5552a562a9ce631a40765552416aca4166553fc858adc5a864ce3bb57c3febaf",
+      "byte_count": 11986,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Algebra.Group.NormalizerQuotient.Basic",
+      "upstream_path": "TauCeti/Algebra/Group/NormalizerQuotient/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Algebra.Group.NormalizerQuotient.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/Algebra/Group/NormalizerQuotient/Basic.lean",
+      "upstream_sha256": "364b7aaa7df7b9b45a239007b2f77a540e7d97ad7fb82670d66c067bb319adf2",
+      "upstream_git_blob_sha1": "f1f862d39cffd255c7f194e7c8271895229d90f1",
+      "local_sha256": "364b7aaa7df7b9b45a239007b2f77a540e7d97ad7fb82670d66c067bb319adf2",
+      "byte_count": 10709,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Connected.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Connected/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Connected.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Connected/Basic.lean",
+      "upstream_sha256": "f0e670d695cbc8b9966c0617d1eff7f2154f571c61633d1946e6885ece8b94ce",
+      "upstream_git_blob_sha1": "785e87fc0f5e93f0134b50d71bceea8e4209e6e9",
+      "local_sha256": "da927a5c759d15924ec41e91142cb09b317b8ffd077d9e4c0921cbef9fdab30e",
+      "byte_count": 9468,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Transport",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Fiber/Transport.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Transport",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Fiber/Transport.lean",
+      "upstream_sha256": "fadb346231f63806c193359e90f929136ebcadbb2e16306d8e4e8fd01af9efe3",
+      "upstream_git_blob_sha1": "3f25d41da2ef3851fcc7b1d20c9e78d0929b749f",
+      "local_sha256": "b3be0bcf57b49c33a2842ea584bd21683c4e4f0b01d86582a639058c2d4c0f12",
+      "byte_count": 11954,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Conjugation",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Conjugation"
+        },
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.ActingGroup",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Quotient/ActingGroup.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.ActingGroup",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Quotient/ActingGroup.lean",
+      "upstream_sha256": "0f409ffaa3c03b4581b9f024b2fb5cdc455a2e754e832f04a28879c7a7c87a29",
+      "upstream_git_blob_sha1": "20e215d4a4ef5dff7f740726a1dfe948f6af4b1d",
+      "local_sha256": "6cb48af8fa64307eac987bf11e3e4793d21278abee3ce1123458f3e5d6754e47",
+      "byte_count": 6465,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Connected.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Connected.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Quotient/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Quotient.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Quotient/Basic.lean",
+      "upstream_sha256": "a0a6c316db8de6e49fc8a0bffca93ed25de57daef53779efe3b4093e609f0f87",
+      "upstream_git_blob_sha1": "9d4756cd5324e32f9d92d901a1906ab75ad81be0",
+      "local_sha256": "288b9394d2e2d7ab623a6045022e9cdfde225fc8e5d5e68c87bd3184935e6252",
+      "byte_count": 10134,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Regular.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Regular.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.Logic.Function.Fiber",
+      "upstream_path": "TauCeti/Logic/Function/Fiber.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Logic.Function.Fiber",
+      "file": "LowDimensionalTopology/External/TauCeti/Logic/Function/Fiber.lean",
+      "upstream_sha256": "bff834966cea9f258df0fa4850c59a25b9a801c4a4787344f363dd60e2f574e4",
+      "upstream_git_blob_sha1": "37a629f993c1405d6e30298467c863f5bd1c9cb0",
+      "local_sha256": "bff834966cea9f258df0fa4850c59a25b9a801c4a4787344f363dd60e2f574e4",
+      "byte_count": 4622,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Covering.Quotient",
+      "upstream_path": "TauCeti/Topology/Covering/Quotient.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Covering.Quotient",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Covering/Quotient.lean",
+      "upstream_sha256": "137eab39b3d19e01c67e273b7021d4b080a42a2b763f41f022a4d22cba965995",
+      "upstream_git_blob_sha1": "2ebe6db87832d124958f8629675eb28c5fb6a882",
+      "local_sha256": "137eab39b3d19e01c67e273b7021d4b080a42a2b763f41f022a4d22cba965995",
+      "byte_count": 11102,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.Topology.Homotopy.HomotopyGroup.Collar",
+      "upstream_path": "TauCeti/Topology/Homotopy/HomotopyGroup/Collar.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.Homotopy.HomotopyGroup.Collar",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/HomotopyGroup/Collar.lean",
+      "upstream_sha256": "6d2c28d5063d31f642307344dc399302b327fe7202daea644978f9c42f855a99",
+      "upstream_git_blob_sha1": "e6f73a2a1bd6a1194d9f8695903401b68da56a21",
+      "local_sha256": "cd4806408f290913de64fec591352b0eeba3daea48b0b72f575dfee88c7efe8c",
+      "byte_count": 16423,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.Topology.Homotopy.Cube.Radius",
+          "after": "public import LowDimensionalTopology.External.TauCeti.Topology.Homotopy.Cube.Radius"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.Topology.MetricSpace.Lebesgue",
+      "upstream_path": "TauCeti/Topology/MetricSpace/Lebesgue.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.Topology.MetricSpace.Lebesgue",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/MetricSpace/Lebesgue.lean",
+      "upstream_sha256": "81a73cd9a5a5e24fb692baeb71da0823d7b65fd99d2ca8582ff4f3efaa56d636",
+      "upstream_git_blob_sha1": "e8dabcef0660389b49afc6a04acbcd3ba112e3b5",
+      "local_sha256": "81a73cd9a5a5e24fb692baeb71da0823d7b65fd99d2ca8582ff4f3efaa56d636",
+      "byte_count": 1688,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": []
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Conjugation",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Conjugation.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Conjugation",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Conjugation.lean",
+      "upstream_sha256": "13d0240ffc3b20ac5c7e15b7b6dd93449e5140d9a5b309910d31463df9c23dc3",
+      "upstream_git_blob_sha1": "8678b34875e394c84583fa32db89301a7dd9efd4",
+      "local_sha256": "5a1f95cb23b0efbd8e81839dfdc3a70dd164fd80abce4a58ff30e4aa16eefef8",
+      "byte_count": 7673,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic"
+        }
+      ]
+    },
+    {
+      "upstream_module": "TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Basic",
+      "upstream_path": "TauCeti/AlgebraicTopology/UniversalCover/Deck/Fiber/Basic.lean",
+      "module": "LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Fiber.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/AlgebraicTopology/UniversalCover/Deck/Fiber/Basic.lean",
+      "upstream_sha256": "11543ceb7d93097a0717b9c53d74773311ee33843c9db94815c0b086fd974e51",
+      "upstream_git_blob_sha1": "ec985b6f2e2e388cbdd86f9e210eb0079be0bc4e",
+      "local_sha256": "eb5a47399c2cd12501364bba63c88fd7474994c901eb835d3520f556241b18cd",
+      "byte_count": 5885,
+      "authors": "The Tau Ceti contributors",
+      "copyright_header": "Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.\nReleased under Apache 2.0 license as described in the file LICENSE.\nAuthors: The Tau Ceti contributors",
+      "local_changes": [
+        "Make original imports public under project module convention",
+        "Prefix only original TauCeti imports with existing External.TauCeti path"
+      ],
+      "exact_source_bytes_preserved_after_reversing_recorded_import_changes": true,
+      "mathematical_statements_and_proof_tokens_preserved": true,
+      "comment_and_literal_contents_preserved": true,
+      "import_changes": [
+        {
+          "before": "public import TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic",
+          "after": "public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.UniversalCover.Deck.Basic"
+        }
+      ]
+    }
+  ],
+  "reused_existing_modules": [
+    {
+      "module": "TauCeti.Analysis.Normed.Module.Normalize",
+      "file": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/Normalize.lean",
+      "local_sha256": "21ecba4bece3c84ea0138158d093b45d92aa911ce6a2ebe460654611568e599e",
+      "upstream_sha256": "21ecba4bece3c84ea0138158d093b45d92aa911ce6a2ebe460654611568e599e"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Path",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/Path.lean",
+      "local_sha256": "40dbd9c5efcf0b607ed2d6dfb9e4bf341796db4a5e097ec6334536c12837ea1d",
+      "upstream_sha256": "56e77fae4d8cab7b31c1fccfc6902bbbdaf5540e98403ecfe0b3b158ca4cc988"
+    },
+    {
+      "module": "TauCeti.Topology.UnitInterval",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/UnitInterval.lean",
+      "local_sha256": "172f1cf91b64e0206f2b8b06d35bfcd55012c53f5f05ac0f5f5cb50ba8419306",
+      "upstream_sha256": "172f1cf91b64e0206f2b8b06d35bfcd55012c53f5f05ac0f5f5cb50ba8419306"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Cube.Radius",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/Cube/Radius.lean",
+      "local_sha256": "adbca1172706605245602eee1f3f871919f7064d652c79741b088bbb26a3b450",
+      "upstream_sha256": "5f9b767dc6e81b44895fb5a1d9b94dedf8513d859f84847e9124c48e2a57cc90"
+    },
+    {
+      "module": "TauCeti.Analysis.Normed.Module.Ball.Homeomorph",
+      "file": "LowDimensionalTopology/External/TauCeti/Analysis/Normed/Module/Ball/Homeomorph.lean",
+      "local_sha256": "0af56e1ab8f9c14aab3c855142ef1bc490b91eadc9d7f6bc185ad9b596a1b78d",
+      "upstream_sha256": "0af56e1ab8f9c14aab3c855142ef1bc490b91eadc9d7f6bc185ad9b596a1b78d"
+    },
+    {
+      "module": "TauCeti.Topology.Homotopy.Cube.Basic",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/Homotopy/Cube/Basic.lean",
+      "local_sha256": "1867efa47906f41a43799c4a0865238b4a9640496ead7bcae522ac92d90b4989",
+      "upstream_sha256": "74548ffb020990ee4aeb940ee009be63d3a87c1efc99219d0607ab6a7a5482c2"
+    },
+    {
+      "module": "TauCeti.Topology.PiCurry",
+      "file": "LowDimensionalTopology/External/TauCeti/Topology/PiCurry.lean",
+      "local_sha256": "a745515992fddfb0dfb34b9fb0fe65b4adabe226c7c4b036370243dd3995843c",
+      "upstream_sha256": "a745515992fddfb0dfb34b9fb0fe65b4adabe226c7c4b036370243dd3995843c"
+    }
+  ],
+  "validation": {
+    "state": "INSTALLED_PENDING_SUCCESSFUL_STRICT_BUILD_AND_TRANSITIVE_AXIOM_AUDIT",
+    "imports_resolved_to_fixed_upstream_or_existing_same_pin_sources": true,
+    "source_math_and_proof_tokens_preserved": true,
+    "comment_string_masked_hole_or_axiom_or_native_decide_tokens": [],
+    "lean": false,
+    "lsp": false,
+    "build": false,
+    "transitive_axiom_audit": false,
+    "new_46_direct_Lean_imports_or_compiler_internals_review": [],
+    "compatibility_adaptation": "The original implicit basepoint is explicitly declared because this project disables automatic implicit binding. This preserves mathematical quantification and all proof bodies; exact reversible edits are recorded per file."
+  },
+  "scope": "Actual groupoid/based van Kampen quotient presentation and actual wedge-of-circles free fundamental group. This selection does not claim the canonical handle quotient comparison, attaching-word computation or the full surface group theorem."
+}

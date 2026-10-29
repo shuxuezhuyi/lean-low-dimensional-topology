@@ -1,0 +1,162 @@
+/-
+Copyright (c) 2026 The Tau Ceti contributors. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Kim Morrison
+-/
+module
+
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+public import LowDimensionalTopology.External.TauCeti.AlgebraicTopology.FundamentalGroupoid.Basic
+
+/-!
+# Basic results on fundamental groupoids and fundamental groups
+
+This file records a basic connectedness result for fundamental groupoids and when a map induced
+on fundamental groups is trivial: a characterization of trivial range loop by loop, and the basic
+consequences of triviality of the *source* fundamental group.
+
+`TauCeti.FundamentalGroup.map_range_eq_bot_iff` was extracted from the proof of
+`semilocallySimplyConnectedAt_iff_range_eq_bot` in
+`TauCeti/AlgebraicTopology/SemilocallySimplyConnected/On.lean`, which is adapted from the Mathlib
+drafts [#31449](https://github.com/leanprover-community/mathlib4/pull/31449),
+[#31576](https://github.com/leanprover-community/mathlib4/pull/31576), and
+[#38292](https://github.com/leanprover-community/mathlib4/pull/38292) by Kim Morrison, for
+Stage 0.1 of the `TauCetiRoadmap/UniversalCovers` roadmap.
+
+## Main declarations
+
+* `FundamentalGroup.map_id`: the identity induces the identity homomorphism.
+* `FundamentalGroup.map_comp`: induced maps preserve composition.
+* `FundamentalGroupoid.nonempty_hom`: the fundamental groupoid of a path-connected
+  space is connected.
+* `TauCeti.FundamentalGroup.map_range_eq_bot_iff`: the induced map has trivial range exactly
+  when every loop at the basepoint becomes nullhomotopic in the target.
+* `TauCeti.FundamentalGroup.map_range_eq_bot_of_subsingleton`: if the source fundamental group
+  is subsingleton, the range of any induced map from it is trivial.
+* `TauCeti.FundamentalGroup.map_range_le_of_subsingleton`: if the source fundamental group is
+  subsingleton, any induced-map range lies in any target subgroup.
+* `TauCeti.FundamentalGroup.map_range_le_of_simplyConnectedSpace`: a simply connected domain has
+  induced-map range contained in any target subgroup.
+* `TauCeti.FundamentalGroup.mapOfEq_range_eq_bot_of_subsingleton`: the same triviality for the
+  basepoint-transported induced map `FundamentalGroup.mapOfEq`.
+-/
+
+public section
+
+open CategoryTheory
+
+namespace FundamentalGroupoid
+
+/-- In the fundamental groupoid of a path-connected space every object receives a morphism from
+every other one, so the groupoid is connected. -/
+theorem nonempty_hom {Y : Type*} [TopologicalSpace Y]
+    [PathConnectedSpace Y] (x y : FundamentalGroupoid Y) : Nonempty (x ⟶ y) :=
+  ⟨Path.Homotopic.Quotient.mk (PathConnectedSpace.somePath x.as y.as)⟩
+
+end FundamentalGroupoid
+
+namespace FundamentalGroup
+
+/-- The identity map induces the identity homomorphism on fundamental groups. -/
+@[simp]
+theorem map_id {X : Type*} [TopologicalSpace X] (x : X) :
+    map (ContinuousMap.id X) x = MonoidHom.id _ := by
+  ext ⟨p⟩ : 1
+  -- Mapping a representative path by the identity preserves the path and its endpoints.
+  induction p using Path.Homotopic.Quotient.ind
+  rfl
+
+/-- The map on fundamental groups induced by a composite is the composite of the induced maps. -/
+@[simp]
+theorem map_comp {X Y Z : Type*} [TopologicalSpace X] [TopologicalSpace Y] [TopologicalSpace Z]
+    (g : C(Y, Z)) (f : C(X, Y)) (x : X) :
+    map (g.comp f) x = (map g (f x)).comp (map f x) :=
+  MonoidHom.ext fun p ↦ End.ext (FundamentalGroupoid.map_comp_map g f p.asHom)
+
+end FundamentalGroup
+
+namespace TauCeti
+
+variable {E X : Type*} [TopologicalSpace E] [TopologicalSpace X]
+variable {A : Type*} [TopologicalSpace A]
+variable {a₀ : A}
+
+/-- Mapping a loop class represented by a path is represented by mapping that path. -/
+theorem FundamentalGroup.map_fromPath {Y : Type*} [TopologicalSpace Y] (f : C(X, Y)) (base : X)
+    (q : Path base base) :
+    _root_.FundamentalGroup.map f base
+        (_root_.FundamentalGroup.fromPath (Path.Homotopic.Quotient.mk q)) =
+      _root_.FundamentalGroup.fromPath (Path.Homotopic.Quotient.mk (q.map f.continuous)) := by
+  simp only [← Path.Homotopic.Quotient.mk''_eq_mk]
+  rfl
+
+/-- **The induced map is trivial exactly loop by loop.** The map on fundamental groups induced by
+`f` has trivial range if and only if every loop at the basepoint becomes nullhomotopic after
+applying `f`. -/
+theorem FundamentalGroup.map_range_eq_bot_iff {Y : Type*} [TopologicalSpace Y] (f : C(X, Y))
+    (base : X) :
+    (_root_.FundamentalGroup.map f base).range = ⊥ ↔
+      ∀ γ : Path base base, (γ.map f.continuous).Homotopic (Path.refl (f base)) := by
+  rw [MonoidHom.range_eq_bot_iff]
+  constructor
+  · intro h γ
+    have h_map : _root_.FundamentalGroup.fromPath ⟦γ.map f.continuous⟧ =
+        _root_.FundamentalGroup.fromPath ⟦Path.refl (f base)⟧ := by
+      simp only [Path.Homotopic.Quotient.mk''_eq_mk]
+      rw [← FundamentalGroup.map_fromPath f base γ, h]
+      simp only [MonoidHom.one_apply, _root_.FundamentalGroup.one_def,
+        Path.Homotopic.Quotient.mk_refl]
+    exact (FundamentalGroupoid.fromPath_eq_iff_homotopic _ _).mp (congrArg End.asHom h_map)
+  · intro h
+    ext ⟨p⟩ : 1
+    obtain ⟨γ, rfl⟩ := Quotient.exists_rep p
+    have hnull : _root_.FundamentalGroup.fromPath ⟦γ.map f.continuous⟧ =
+        _root_.FundamentalGroup.fromPath ⟦Path.refl (f base)⟧ :=
+      congrArg End.of ((FundamentalGroupoid.fromPath_eq_iff_homotopic _ _).mpr (h γ))
+    simp only [Path.Homotopic.Quotient.mk''_eq_mk] at hnull ⊢
+    rw [FundamentalGroup.map_fromPath f base γ, hnull]
+    simp only [MonoidHom.one_apply, _root_.FundamentalGroup.one_def,
+      Path.Homotopic.Quotient.mk_refl]
+
+/-- If the source fundamental group is subsingleton, the range of any induced map from it is
+trivial. -/
+@[simp]
+theorem FundamentalGroup.map_range_eq_bot_of_subsingleton
+    [Subsingleton (_root_.FundamentalGroup A a₀)] (f : C(A, X)) :
+    (_root_.FundamentalGroup.map f a₀).range = ⊥ := by
+  have : Subsingleton ((_root_.FundamentalGroup.map f a₀).range) :=
+    (Set.subsingleton_coe _).mpr ((_root_.FundamentalGroup.map f a₀).subsingleton_coe_range)
+  exact Subgroup.eq_bot_of_subsingleton _
+
+/-- A simply connected domain has trivial induced fundamental-group range. -/
+theorem FundamentalGroup.map_range_eq_bot_of_simplyConnectedSpace [SimplyConnectedSpace A]
+    (f : C(A, X)) (a₀ : A) : (_root_.FundamentalGroup.map f a₀).range = ⊥ :=
+  FundamentalGroup.map_range_eq_bot_of_subsingleton f
+
+/-- If the source fundamental group is subsingleton, its induced-map range lies in any target
+subgroup. -/
+theorem FundamentalGroup.map_range_le_of_subsingleton
+    [Subsingleton (_root_.FundamentalGroup A a₀)] (f : C(A, X))
+    (H : Subgroup (_root_.FundamentalGroup X (f a₀))) :
+    (_root_.FundamentalGroup.map f a₀).range ≤ H := by
+  rw [FundamentalGroup.map_range_eq_bot_of_subsingleton f]
+  exact bot_le
+
+/-- If the source fundamental group is subsingleton, the range of the induced map transported to
+a prescribed target basepoint is trivial. -/
+@[simp]
+theorem FundamentalGroup.mapOfEq_range_eq_bot_of_subsingleton
+    [Subsingleton (_root_.FundamentalGroup A a₀)] (f : C(A, X)) {x : X} (h : f a₀ = x) :
+    (_root_.FundamentalGroup.mapOfEq f h).range = ⊥ := by
+  have : Subsingleton ((_root_.FundamentalGroup.mapOfEq f h).range) :=
+    (Set.subsingleton_coe _).mpr ((_root_.FundamentalGroup.mapOfEq f h).subsingleton_coe_range)
+  exact Subgroup.eq_bot_of_subsingleton _
+
+/-- A simply connected domain has induced fundamental-group range contained in any target
+subgroup. -/
+theorem FundamentalGroup.map_range_le_of_simplyConnectedSpace [SimplyConnectedSpace A]
+    (f : C(A, X)) (a₀ : A) (H : Subgroup (_root_.FundamentalGroup X (f a₀))) :
+    (_root_.FundamentalGroup.map f a₀).range ≤ H :=
+  FundamentalGroup.map_range_le_of_subsingleton f H
+
+end TauCeti

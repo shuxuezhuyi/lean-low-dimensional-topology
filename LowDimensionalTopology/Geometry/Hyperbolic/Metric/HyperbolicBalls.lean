@@ -3,6 +3,7 @@ Released under Apache 2.0 license as described in the file LICENSE.
 -/
 module
 
+public import LowDimensionalTopology.Geometry.Hyperbolic.Models.PoincareDensity
 public import LowDimensionalTopology.Geometry.Hyperbolic.ModelMaps.CayleyHalfPlaneDisk
 public import Mathlib.Analysis.Complex.UpperHalfPlane.Measure
 public import Mathlib.Analysis.SpecialFunctions.PolarCoord
@@ -52,7 +53,7 @@ def discCirclePiece (R : ℝ) (hR : 0 ≤ R) (hR1 : R < 1) : DiscC1CurvePiece wh
 theorem discCirclePiece_speed (R : ℝ) (hR : 0 ≤ R) (hR1 : R < 1) (θ : ℝ) :
     discWeightedSpeed (discCirclePiece R hR hR1).curve (discCirclePiece R hR hR1).velocity θ =
       2 * R / (1 - R ^ 2) := by
-  simp only [discWeightedSpeed, discCirclePiece, Complex.UnitDisc.coe_mk, norm_mul,
+  simp only [discWeightedSpeed_formula, discCirclePiece, Complex.UnitDisc.coe_mk, norm_mul,
     Complex.norm_I, mul_one, norm_circleMap_zero, abs_of_nonneg hR]
 
 theorem discCirclePiece_length (R : ℝ) (hR : 0 ≤ R) (hR1 : R < 1) :
@@ -110,10 +111,18 @@ theorem discCirclePiece_distance (r : ℝ) (hr : 0 ≤ r) (θ : ℝ) :
   linarith
 
 /-- The planar area density prescribed. -/
-def discAreaDensity (z : ℂ) : ℝ := 4 / (1 - ‖z‖ ^ 2) ^ 2
+def discAreaDensity (z : ℂ) : ℝ := poincareLengthDensity z ^ 2
+
+/-- The original planar area formula remains available as a public lemma. -/
+theorem discAreaDensity_formula (z : ℂ) :
+    discAreaDensity z = 4 / (1 - ‖z‖ ^ 2) ^ 2 := poincareLengthDensity_sq z
+
+/-- The planar area weight is the square of the common length density. -/
+theorem discAreaDensity_eq_poincareLengthDensity_sq (z : ℂ) :
+    discAreaDensity z = poincareLengthDensity z ^ 2 := rfl
 
 theorem discAreaDensity_nonneg (z : ℂ) : 0 ≤ discAreaDensity z := by
-  exact div_nonneg (by norm_num) (sq_nonneg _)
+  exact sq_nonneg _
 
 /-- The genuine density-weighted Lebesgue measure, totalized outside the unit disc. -/
 def discAreaMeasure : Measure ℂ :=
@@ -121,12 +130,10 @@ def discAreaMeasure : Measure ℂ :=
 
 theorem discAreaDensity_continuousOn_closedBall (R : ℝ) (hR : R < 1) :
     ContinuousOn discAreaDensity (Metric.closedBall 0 R) := by
-  apply continuousOn_const.div
-    ((continuousOn_const.sub (continuous_norm.continuousOn.pow 2)).pow 2)
-  intro z hz
-  have hzR : ‖z‖ ≤ R := by simpa only [Metric.mem_closedBall, dist_zero_right] using hz
-  have hs : ‖z‖ ^ 2 < 1 := by nlinarith [hzR.trans_lt hR, norm_nonneg z]
-  exact pow_ne_zero 2 (sub_pos.mpr hs).ne'
+  have hsub : Metric.closedBall (0 : ℂ) R ⊆ Metric.ball 0 1 := by
+    intro z hz
+    exact mem_ball_zero_iff.mpr ((mem_closedBall_zero_iff.mp hz).trans_lt hR)
+  exact (continuousOn_poincareLengthDensity.mono hsub).pow 2
 
 /-- On compact subdiscs, the measure is the stated ordinary area integral. -/
 theorem discAreaMeasure_closedBall_integral (R : ℝ) (hR : R < 1) :
@@ -160,7 +167,7 @@ theorem discAreaDensity_closedBall_polar (R : ℝ) (hR : 0 ≤ R) :
       simp only [Metric.mem_closedBall, dist_zero_right, Complex.norm_polarCoord_symm, abs_of_pos hr]
     by_cases hle : p.1 ≤ R
     · rw [Set.indicator_of_mem (hm.mpr hle), Set.indicator_of_mem (show p.1 ∈ Iic R from hle)]
-      simp only [discAreaDensity, Complex.norm_polarCoord_symm, abs_of_pos hr, mul_one]
+      simp only [discAreaDensity_formula, Complex.norm_polarCoord_symm, abs_of_pos hr, mul_one]
       ring
     · rw [Set.indicator_of_notMem (fun h => hle (hm.mp h)),
         Set.indicator_of_notMem (show p.1 ∉ Iic R from hle)]
@@ -283,7 +290,7 @@ theorem inverseCayley_area_density (z : 𝔻) :
   have h := inverseCayley_weighted_tangent_norm z (1 : ℂ)
   simp only [mul_one, norm_one] at h
   have h' := congrArg (fun t : ℝ => t ^ 2) h
-  simpa only [div_pow, discAreaDensity, mul_one, mul_one_div, show (2 : ℝ) ^ 2 = 4 by norm_num]
+  simpa only [div_pow, discAreaDensity_formula, mul_one, mul_one_div, show (2 : ℝ) ^ 2 = 4 by norm_num]
     using h'
 
 theorem disc_isOpenEmbedding_coe : Topology.IsOpenEmbedding ((↑) : 𝔻 → ℂ) := by

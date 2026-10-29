@@ -72,6 +72,25 @@ theorem hEllipticFree_hyperbolic_crossing_displacement_bound
     (hHyperbolic_sinh_translation_le_displacement B hB htB z) hSB
     (Real.sinh_nonneg_iff.mpr (by positivity)))
 
+/-- Distinct crossing axes in an elliptic-free group give the sharp product
+bound for the actual translation lengths. -/
+theorem hEllipticFree_hyperbolic_crossing_translation_product
+    (G : Subgroup complexMobiusGroup) (hG : IsEllipticFree G)
+    (A B : Matrix.SpecialLinearGroup (Fin 2) ℝ)
+    (hAm : realSLMobius A ∈ G) (hBm : realSLMobius B ∈ G)
+    (hA : realSLMobius A ≠ 1) (hB : realSLMobius B ≠ 1)
+    (htA : 4 < (Matrix.trace A.val) ^ 2) (htB : 4 < (Matrix.trace B.val) ^ 2)
+    (p : ℍ) (hpA : p ∈ (hHyperbolicAxis A hA htA).carrier)
+    (hpB : p ∈ (hHyperbolicAxis B hB htB).carrier)
+    (hneq : hHyperbolicAxis A hA htA ≠ hHyperbolicAxis B hB htB) :
+    1 ≤ Real.sinh (hTranslationLength (hSLIsometry A) / 2) *
+      Real.sinh (hTranslationLength (hSLIsometry B) / 2) := by
+  have hb := hEllipticFree_hyperbolic_crossing_displacement_bound
+    G hG A B hAm hBm hA hB htA htB p hpA hpB hneq p
+  rw [(hHyperbolic_translation_minimum A hA htA p).mpr hpA,
+    (hHyperbolic_translation_minimum B hB htB p).mpr hpB] at hb
+  exact hb
+
 /-- A pair of adjacent nonelliptic traces straddling zero imposes the exact multiplicative gap. -/
 theorem ellipticFree_adjacent_exponential_gap (u x y : ℝ) (hu : 1<u)
     (hx : 0<x) (_hy : 0<y) (hyx : y≤x) (hxuy : x≤u^2*y)
